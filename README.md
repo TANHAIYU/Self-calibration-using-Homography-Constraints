@@ -1,1 +1,1 @@
-# self-cal
+# self-calibration
