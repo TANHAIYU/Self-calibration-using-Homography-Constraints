@@ -15,7 +15,6 @@
 
 namespace planecalib {
 
-	//////////////////////////////////////////////////////////////////
 // HomographyCalibrationError
 
 class HomographyCalibrationError
@@ -127,7 +126,6 @@ public:
 			residuals[0] = KiHC1.dot(KiHC2);
 			residuals[1] = norm1Sq - norm2Sq;
 		}
-
 		return true;
 
 	}
@@ -142,9 +140,8 @@ private:
 	const Eigen::Matrix3d &mH;
 };
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // HomographyCalibrationRansac
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void HomographyCalibrationRansac::setData(const std::vector<Eigen::Matrix3d> *homographies)
 {
 	assert(homographies);
@@ -188,7 +185,7 @@ void HomographyCalibrationRansac::getInliers(const double &model, int &inlierCou
 
 		double errorSq = residuals.squaredNorm();
 
-		if (errorSq < mOutlierErrorThresholdSq)
+    if (errorSq < static_cast<double>(mOutlierErrorThresholdSq))
 		{
 			inlierCount++;
 		}
@@ -196,12 +193,10 @@ void HomographyCalibrationRansac::getInliers(const double &model, int &inlierCou
 		//Apply robust function
 		double robustError[3];
 		robustLoss.Evaluate(errorSq, robustError);
-		errorSumSq += (float)robustError[0];
+    errorSumSq += static_cast<float>(robustError[0]);
 	}
 }
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////
 
 void HomographyCalibration::initFromCamera(const CameraModel &camera)
 {
@@ -221,10 +216,10 @@ void HomographyCalibration::calibrateLinear(const std::vector<Eigen::Matrix3d> &
 {
 	ProfileSection s("linear");
 
-	int hcount = H.size();
+  int hcount = static_cast<int>(H.size());
 
 	HomographyCalibrationRansac ransac;
-	ransac.setParams(0.1, std::min(10, hcount), hcount, hcount);
+  ransac.setParams(static_cast<float>(0.1), std::min(10, hcount), hcount, hcount);
 	ransac.setData(&H);
 	ransac.doRansac();
 	mInitialAlpha = ransac.getBestModel();
@@ -262,8 +257,8 @@ void HomographyCalibration::calibrateNonLinear(const std::vector<Eigen::Matrix3d
 	ceres::LossFunction *lossFunc = NULL;
 	//lossFunc = new ceres::CauchyLoss(3.0);
 
-	Eigen::Vector2d pp(0, 0); //Homographies have been normalized so principal point is at the origin
-	mNormal << 0, 0, 1; //Assume reference camera is perependicular to plane.
+  Eigen::Vector2d pp(0, 0); //Homographies have been normalized so principal point is at the origin 同源性已经归一化，所以要点在原点
+  mNormal << 0, 0, 1; //Assume reference camera is perependicular to plane. 假设参考摄像机垂直于平面。
 
 	double alpha = mInitialAlpha;
 	problem.AddParameterBlock(&alpha, 1);
@@ -305,7 +300,6 @@ void HomographyCalibration::calibrateNonLinear(const std::vector<Eigen::Matrix3d
 		MYAPP_LOG << summary.FullReport();
 
 		MYAPP_LOG << "Initial alpha=" << mInitialAlpha << ", final=" << alpha << "\n";
-
 		MYAPP_LOG << "PP=" << mPrincipalPoint.transpose() << "\n";
 		MYAPP_LOG << "Normal=" << mNormal.transpose() << "\n";
 	}
@@ -315,7 +309,7 @@ void HomographyCalibration::calibrate(const std::vector<Eigen::Matrix3fr> &H)
 {
 	ProfileSection s("HomographyCalibrate");
 
-	int hcount = H.size();
+  int hcount = static_cast<int>(H.size());
 	std::vector<Eigen::Matrix3d> Ht(hcount);
 	for (int i = 0; i < hcount; i++)
 	{

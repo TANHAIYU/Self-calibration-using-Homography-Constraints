@@ -17,10 +17,8 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <memory>
-
-//Note: each log call takes a lock on a mutex due to multi-threading. Thus, logging considerably reduces performance!
+//注意：由于多线程，每个日志调用都会锁定互斥锁。 因此，日志记录会大大降低性能！
 #define ENABLE_LOG
-
 
 #ifdef ENABLE_LOG
 #define MYAPP_LOG (planecalib::Log(__FILE__, __LINE__, __FUNCTION__))
@@ -190,52 +188,11 @@ std::ostream &operator <<(std::ostream &s, const std::vector<T> &value)
 }
 
 
-/////////////////////////////////////////////////////////////////////////////////////
-// Template implementations
-/////////////////////////////////////////////////////////////////////////////////////
+// Template implementations  模板实现
 #include <opencv2/core.hpp>
 
 namespace planecalib
 {
-
-//template<class T, int M, int N>
-//std::ostream &operator <<(std::ostream &s, const cv::Matx<T,M,N> &value)
-//{
-//	s << "[";
-//	for(int j=0; j<value.rows; j++)
-//	{
-//		const T *row = &value(j,0);
-//		s << (T)row[0];
-//		for(int i=1; i<value.cols; i++)
-//		{
-//			s << "," << (T)row[i];
-//		}
-//		if(j<value.rows-1)
-//			s << "; ";
-//	}
-//	s << "]";
-//	return s;
-//}
-
-//template<class T>
-//std::ostream &operator <<(std::ostream &s, const cv::Mat_<T> &value)
-//{
-//	s << "[";
-//	for(int j=0; j<value.rows; j++)
-//	{
-//		const T *row = value[j];
-//		s << (T)row[0];
-//		for(int i=1; i<value.cols; i++)
-//		{
-//			s << "," << (T)row[i];
-//		}
-//		if(j<value.rows-1)
-//			s << ";\n";
-//	}
-//	s << "]";
-//	return s;
-//}
-
 }
 
 #endif

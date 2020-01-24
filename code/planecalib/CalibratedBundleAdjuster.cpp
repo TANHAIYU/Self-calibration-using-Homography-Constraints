@@ -19,7 +19,6 @@ namespace planecalib
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // CalibratedReprojectionError
-
 class CalibratedReprojectionError
 {
 public:
@@ -38,7 +37,8 @@ public:
 	static const int kResidualCount = 2;
 
 	template<class T>
-	bool operator() (const T * const _pp, const T * const _distortion, const T * const _focalLengths, const T * const rparams, const T * const tparams, const T * const x, T *residuals) const;
+  bool operator() (const T * const _pp, const T * const _distortion, const T * const _focalLengths,
+                   const T * const rparams, const T * const tparams, const T * const x, T *residuals) const;
 
 protected:
 	const int mScale;
@@ -46,7 +46,8 @@ protected:
 };
 
 template<class T>
-bool CalibratedReprojectionError::operator () (const T * const _pp, const T * const _distortion, const T * const _focalLengths, const T * const rparams, const T * const _tparams, const T * const x, T *residuals) const
+bool CalibratedReprojectionError::operator () (const T * const _pp, const T * const _distortion, const T * const _focalLengths,
+                                               const T * const rparams, const T * const _tparams, const T * const x, T *residuals) const
 {
 	Eigen::Map<Eigen::Matrix<T, 2, 1>> pp((T*)_pp);
 	Eigen::Map<Eigen::Matrix<T, TDistortionParamVector::RowsAtCompileTime, 1>> distortion((T*)_distortion);
@@ -58,7 +59,7 @@ bool CalibratedReprojectionError::operator () (const T * const _pp, const T * co
 	xw[1] = x[1];
 	xw[2] = T(0);
 
-	//Rotate and translate
+  //旋转和平移
 	Eigen::Matrix<T, 3, 1>  xc;
 	ceres::AngleAxisRotatePoint(rparams, xw.data(), xc.data());
 
@@ -83,7 +84,6 @@ void CalibratedBundleAdjuster::addFrameToAdjust(Keyframe &newFrame)
 	if(itNewFrame.second)
 	{
 		//New frame!
-
 		//Add features too
 		for(auto itM=newFrame.getMeasurements().begin(),endM=newFrame.getMeasurements().end(); itM!=endM; ++itM)
 		{
@@ -182,11 +182,11 @@ bool CalibratedBundleAdjuster::bundleAdjust()
 	//options.linear_solver_type = ceres::CGNR;
 	options.linear_solver_type = ceres::SPARSE_SCHUR;
 	options.preconditioner_type = ceres::SCHUR_JACOBI;
-	options.dense_linear_algebra_library_type = ceres::LAPACK;
+  options.dense_linear_algebra_library_type = ceres::LAPACK;
 
 	options.max_num_iterations = 500;
 	options.num_threads = 4;
-	options.num_linear_solver_threads = 4;
+  //options.num_linear_solver_threads = 4;//我修改的
 	options.logging_type = ceres::SILENT;
 
 	options.minimizer_progress_to_stdout = false;

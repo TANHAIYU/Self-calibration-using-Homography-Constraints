@@ -11,6 +11,7 @@
 namespace planecalib
 {
 
+//计算导数
 void cvutils::CalculateDerivatives(const cv::Mat1b &img, cv::Mat1s &dx, cv::Mat1s &dy)
 {
 	static const int kShiftFactor = 1;
@@ -37,6 +38,7 @@ void cvutils::CalculateDerivatives(const cv::Mat1b &img, cv::Mat1s &dx, cv::Mat1
 	}
 }
 
+//Downsample Image  下采样图像
 void cvutils::DownsampleImage(const cv::Mat &img, cv::Mat &res, int count)
 {
 	res = img;

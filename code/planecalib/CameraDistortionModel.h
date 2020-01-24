@@ -21,8 +21,8 @@
 namespace planecalib
 {
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
 // ForwardDistortionFunction & InverseDistortionFunction
+// 正向畸变函数和反向畸变函数
 
 template <class TDistortionModel>
 class ForwardDistortionFunction : public ceres::SizedCostFunction<2, TDistortionModel::TParamVector::SizeAtCompileTime, 2>
@@ -178,8 +178,7 @@ protected:
 };
 */
 
-///////////////////////////////////////////////////////
-// DivisionDistortionModel
+// DivisionDistortionModel 除法失真模型
 class DivisionDistortionModel
 {
 public:
@@ -203,7 +202,6 @@ public:
 	TParamVector getParams() const { TParamVector p; p[0] = mLambda; return p; }
 	void setParams(const TParamVector &coeff) { mLambda = (float)coeff[0]; }
 
-	///////////////////////////
 	// Apply 
 	inline Eigen::Vector2f apply(const Eigen::Vector2f &x) const;
 
@@ -213,7 +211,6 @@ public:
 	template <class TParamsMat, class TXMat, class TXdMat>
 	static void Apply(const Eigen::MatrixBase<TParamsMat> &params, const Eigen::MatrixBase<TXMat> &x, Eigen::MatrixBase<TXdMat> &xd);
 
-	///////////////////////////
 	// Apply Inverse
 	inline Eigen::Vector2f applyInv(const Eigen::Vector2f &xd) const;
 
@@ -230,7 +227,6 @@ protected:
 	float mLambda;
 	float mMaxRadiusSq; //Do not apply distortion after this radius. Keeps the distortion within the image limits where it was calibrated.
 
-	///////////////////////////////////////////////////////////////////////////////////////
 	// Apply (internal)
 	template <class TParamsMat, class TXMat, class TXdMat>
 	static bool EvaluateCeres(const Eigen::MatrixBase<TParamsMat> &params, const Eigen::MatrixBase<TXMat> &x, Eigen::MatrixBase<TXdMat> &xd, double **jacobians);
@@ -239,7 +235,7 @@ protected:
 	static bool EvaluateCeres2(const TLambda &lambda, const Eigen::MatrixBase<TXMat> &x, Eigen::MatrixBase<TXdMat> &xd, double **jacobians);
 
 
-	//Calcualtes the jacobians in ceres format
+  //Calcualtes the jacobians in ceres format 以ceres格式计算jacobins
 	//jacobians[0][0:1] = [dxd/dlambda, dyd/dlambda]
 	//jacobians[1][0:1] = [dxd/dx, dyd/dx]
 	//jacobians[1][2:3] = [dxd/dy, dyd/dy]
@@ -262,10 +258,8 @@ protected:
 	static void EvaluateInvCeresJacobians(double lambda, const Eigen::MatrixBase<TXMat> &x, double r2, double factor, double **jacobians);
 };
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Template implementations
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Template implementations 模板实现
 template class ForwardDistortionFunction<DivisionDistortionModel>;
 template class InverseDistortionFunction<DivisionDistortionModel>;
 
@@ -297,7 +291,6 @@ void DivisionDistortionModel::Apply(const Eigen::MatrixBase<TParamsMat> &params,
 	gApplyFunctor(&params[0], &x[0], &xd[0]);
 }
 
-///////////////////////////
 // Apply Inverse
 Eigen::Vector2f DivisionDistortionModel::applyInv(const Eigen::Vector2f &xd) const
 {
@@ -328,7 +321,7 @@ void DivisionDistortionModel::ApplyInv(const Eigen::MatrixBase<TParamsMat> &para
 	gApplyInvFunctor(&params[0], &xd[0], &x[0]);
 }
 
-///////////////////////////////////////////////////////////////////////////////////////
+
 // Apply (internal)
 template <class TParamsMat, class TXMat, class TXdMat>
 bool DivisionDistortionModel::EvaluateCeres(const Eigen::MatrixBase<TParamsMat> &params, const Eigen::MatrixBase<TXMat> &x, Eigen::MatrixBase<TXdMat> &xd, double **jacobians)
@@ -363,7 +356,7 @@ bool DivisionDistortionModel::EvaluateCeres2(const TLambda &lambda, const Eigen:
 }
 
 
-//Calcualtes the jacobians in ceres format
+//Calcualtes the jacobians in ceres format 以ceres格式计算jacobins
 //jacobians[0][0:1] = [dxd/dlambda, dyd/dlambda]
 //jacobians[1][0:1] = [dxd/dx, dyd/dx]
 //jacobians[1][2:3] = [dxd/dy, dyd/dy]
@@ -374,21 +367,21 @@ void DivisionDistortionModel::EvaluateCeresJacobians(double lambda, const Eigen:
 	if (jacobians[0])
 	{
 		//dxd/dlambda
-		jacobians[0][0] = -x[0] * r2*factor2;
+    jacobians[0][0] = -static_cast<double>(x[0]) * r2*factor2;
 		//dyd/dlambda
-		jacobians[0][1] = -x[1] * r2*factor2;
+    jacobians[0][1] = -static_cast<double>(x[1]) * r2*factor2;
 	}
 	if (jacobians[1])
 	{
 		//dxd/dx
-		jacobians[1][0] = (1 + lambda*(x[1] * x[1] - x[0] * x[0]))*factor2;
+    jacobians[1][0] = (1 + lambda*(static_cast<double>(x[1]) * static_cast<double>(x[1]) - static_cast<double>(x[0]) * static_cast<double>(x[0])))*factor2;
 		//dxd/dy
-		jacobians[1][1] = -2 * lambda*x[0] * x[1] * factor2;
+    jacobians[1][1] = -2 * lambda*static_cast<double>(x[0]) * static_cast<double>(x[1]) * factor2;
 
 		//dyd/dx
-		jacobians[1][2] = -2 * lambda*x[0] * x[1] * factor2;
+    jacobians[1][2] = -2 * lambda*static_cast<double>(x[0]) * static_cast<double>(x[1]) * factor2;
 		//dyd/dy
-		jacobians[1][3] = (1 + lambda*(x[0] * x[0] - x[1] * x[1]))*factor2;
+    jacobians[1][3] = (1 + lambda*(static_cast<double>(x[0]) * static_cast<double>(x[0]) - static_cast<double>(x[1]) * static_cast<double>(x[1])))*factor2;
 	}
 }
 
@@ -411,8 +404,9 @@ bool DivisionDistortionModel::EvaluateInvCeres2(const TLambda &lambda, const Eig
 
 	typedef typename TXMat::Scalar TScalar;
 
-	//Iterative
-	TScalar r2, factorInv;
+  //Iterative 迭代
+  // TODO:this is unitialized. Please check it
+  TScalar r2, factorInv;
 	const int kMaxIters = 11;
 	Eigen::Matrix<TScalar, 2, 1> pn = xd;
 	for (int j = 0; j < kMaxIters; j++)

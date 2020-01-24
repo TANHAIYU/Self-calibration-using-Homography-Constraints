@@ -19,7 +19,7 @@ class ImagePyramid {
 public:
 	static int GetOctaveCount(int level0Width, int maxTopLevelWidth);
 
-	int getOctaveCount() const {return (int)mOctaves.size();}
+  int getOctaveCount() const {return (int)mOctaves.size();}  //获取图层的数量
 
 	cv::Mat_<T> &operator [](int octave) {return mOctaves[octave];}
 	const cv::Mat_<T> &operator [](int octave) const {return mOctaves[octave];}

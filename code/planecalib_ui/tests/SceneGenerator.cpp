@@ -206,19 +206,7 @@ std::unique_ptr<Map> SceneGenerator::generateFromPoses(const std::vector<Eigen::
 	//Matlab log of poses
 	if (mLogScene)
 	{
-		//Eigen::MatrixX3f points(newMap->getFeatures().size(), 3);
-		//for (int i = 0; i < points.rows(); i++)
-		//{
-		//	points.row(i) = newMap->getFeatures()[i]->mPosition3D.transpose();
-		//}
-		//MatlabDataLog::Instance().AddValue("K", mCamera->getK());
-		//MatlabDataLog::Instance().AddValue("X", points.transpose());
-		//for (int i = 0; i < posesR.size(); i++)
-		//{
-		//	MatlabDataLog::Instance().AddCell("R", posesR[i]);
-		//	MatlabDataLog::Instance().AddCell("center", posesCenter[i]);
-		//}
-		//return std::unique_ptr<Map>();
+
 	}
 
 	//Frames

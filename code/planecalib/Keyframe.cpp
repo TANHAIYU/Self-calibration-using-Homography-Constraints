@@ -25,15 +25,17 @@ const Feature &FeatureMatch::getFeature() const
 
 ///////////////////////////////////
 // TrackingFrame class
-TrackingFrame::TrackingFrame()
+///////////////////////////////////
+TrackingFrame::TrackingFrame()  //构造函数
 {
 }
 
-TrackingFrame::~TrackingFrame()
+TrackingFrame::~TrackingFrame()  //析沟函数
 {
 }
 
 void TrackingFrame::initImageData(const cv::Mat3b &imageColor, const cv::Mat1b &imageGray)
+//初始化图片数据生成ImagePyramid
 {
 	mColorImage = imageColor;
 
@@ -48,46 +50,27 @@ void TrackingFrame::initImageData(const cv::Mat3b &imageColor, const cv::Mat1b &
 		mSBI = temp;
 	}
 
-	//SBI derivatives
+  //SBI derivatives SBI求导数
 	cvutils::CalculateDerivatives(mSBI, mSBIdx, mSBIdy);
 }
 
-Eigen::Vector2f TrackingFrame::warpKey2Img(const Eigen::Vector2f &keyp)
+Eigen::Vector2f TrackingFrame::warpKey2Img(const Eigen::Vector2f &keyp) //求出点在另一帧的对应点
 {
-	//const Eigen::Vector3f keyx = mWarpCamera.unprojectToWorld(keyp);
-	//const Eigen::Vector3f lastx = mWarpPose*keyx;
-	//const Eigen::Vector2f lastp = mWarpCamera.projectFromWorld(lastx);
-	//return eutils::HomographyPoint(mWarpOpticalHomography, lastp);
 	return eutils::HomographyPoint(mWarpHomography, keyp);
 }
 
-void TrackingFrame::createKeypoints(const Eigen::Matrix3fr &warpOpticalHomography, const CameraModel &camera, const Eigen::Matrix3fr &warpPose)
+void TrackingFrame::createKeypoints(const Eigen::Matrix3fr &warpOpticalHomography,
+                                    const CameraModel &camera,
+                                    const Eigen::Matrix3fr &warpPose)
+//在Keyframe生成Pyramid并且生成Features与Descriptor
 {
 	ProfileSection s("createWarpKeypoints");
 	cv::Mat1b warpedImage;
 	mWarpOpticalHomography = warpOpticalHomography;
-	mWarpCamera = camera;
+  mWarpCamera = camera; //好像没用到？？
 	mWarpPose = warpPose;
 
-	//Create map
-	//cv::Mat2f map(mOriginalPyramid[0].rows, mOriginalPyramid[0].cols);
-	//for (int v = 0; v < map.rows; v++)
-	//{
-	//	for (int u = 0; u < map.cols; u++)
-	//	{
-	//		const Eigen::Vector2f keyp = Eigen::Vector2f(u, v);
-	//		//const Eigen::Vector3f keyx = camera.unprojectToWorld(keyp);
-	//		//const Eigen::Vector3f lastx = warpPose*keyx;
-	//		//const Eigen::Vector2f lastp = camera.projectFromWorld(keyp); 
-	//		//const Eigen::Vector2f imgp = eutils::HomographyPoint(warpOpticalHomography, lastp);
-	//		const Eigen::Vector2f imgp = warpKey2Img(keyp);
-
-	//		map(v, u)[0] = imgp[0];
-	//		map(v, u)[1] = imgp[1];
-	//	}
-	//}
-
-	const Eigen::Matrix3fr T = eutils::GetTranslateHomography(-camera.getPrincipalPoint());
+  const Eigen::Matrix3fr T = eutils::GetTranslateHomography(-camera.getPrincipalPoint());  //TOD：What is T&Ti
 	const Eigen::Matrix3fr Ti = eutils::GetTranslateHomography(camera.getPrincipalPoint());
 
 	mWarpHomography = Ti*warpPose*T;
@@ -98,10 +81,11 @@ void TrackingFrame::createKeypoints(const Eigen::Matrix3fr &warpOpticalHomograph
 
 	mWarpedPyramid.create(warpedImage, FLAGS_PyramidMaxTopLevelWidth);
 
-	Keyframe::CreateKeypoints(mWarpedPyramid, mWarpedKeypoints, mWarpedDescriptorBuffers, mWarpedDescriptors);
+  Keyframe::CreateKeypoints(mWarpedPyramid, mWarpedKeypoints, mWarpedDescriptorBuffers, mWarpedDescriptors);
+  //在Keyframe生成Pyramid并且生成Features与Descriptor
 }
 
-void TrackingFrame::createMatchMap()
+void TrackingFrame::createMatchMap()  //将在mMatches的每个match的（&match.getFeature(),&match）这个pair加入mMatchMap
 {
 	mMatchMap.clear();
 	for (auto &match : mMatches)
@@ -110,7 +94,7 @@ void TrackingFrame::createMatchMap()
 
 ///////////////////////////////////
 // Keyframe class
-
+///////////////////////////////////
 Keyframe::Keyframe() :
 		mKeypoints(new std::vector<std::vector<cv::KeyPoint>>())
 {
@@ -128,6 +112,7 @@ Keyframe::~Keyframe()
 }
 
 void Keyframe::init(const cv::Mat3b &imageColor, const cv::Mat1b &imageGray)
+//初始化Keyrame 将image生成imagePyramid 并生成关键点
 {
 	mColorImage = imageColor;
 	
@@ -149,6 +134,7 @@ void Keyframe::init(const cv::Mat3b &imageColor, const cv::Mat1b &imageGray)
 }
 
 void Keyframe::init(const TrackingFrame &other)
+//对于TrackinFrame生成imagePyramid 并生成关键点 并stamp time
 {
 	mColorImage = other.getColorImage();
 	mPyramid = other.getOriginalPyramid();
@@ -160,7 +146,10 @@ void Keyframe::init(const TrackingFrame &other)
 	createKeypoints();
 }
 
-void Keyframe::CreateKeypoints(const ImagePyramid1b &pyramid, std::vector<std::vector<cv::KeyPoint>> &keypoints, std::vector<cv::Mat1b> &descriptorBuffers, std::vector<EigenDescriptorMap> &descriptors)
+void Keyframe::CreateKeypoints(const ImagePyramid1b &pyramid,
+                               std::vector<std::vector<cv::KeyPoint>> &keypoints,
+                               std::vector<cv::Mat1b> &descriptorBuffers, std::vector<EigenDescriptorMap> &descriptors)
+//输入ImagePyramid 输出keypoints descriptorBuffers 描述子
 {
 	keypoints.clear();
 	descriptorBuffers.clear();
@@ -172,27 +161,27 @@ void Keyframe::CreateKeypoints(const ImagePyramid1b &pyramid, std::vector<std::v
 	descriptors.reserve(pyramid.getOctaveCount());
 
     //Different opencv version:
-    //cv::Ptr<cv::ORB> orb = cv::ORB::create(2000, 2, 1);
-	//orb->setEdgeThreshold(0);
-    cv::ORB orb(2000, 2, 1, 0);
+        cv::Ptr<cv::ORB> orb = cv::ORB::create(2000, 2, 1);
+	    orb->setEdgeThreshold(0);
+    //cv::ORB orb(2000, 2, 1, 0);
 
 	for (int octave = 0; octave < pyramid.getOctaveCount(); octave++)
 	{
 		const int scale = 1 << octave;
 
 		//std::vector<cv::KeyPoint> keypointsAll;
-		//cv::Mat1b descriptorsAll;
 		std::vector<cv::KeyPoint> &keypointsAll = keypoints[octave];
-		cv::Mat1b &descriptorsAll = descriptorBuffers[octave];
+    cv::Mat1b &descriptorsAll = descriptorBuffers[octave];
 
 		//ORB features
         //Different opencv version:
-		//orb->detectAndCompute(pyramid[octave], cv::noArray(), keypointsAll, descriptorsAll);
-        orb.detect(pyramid[octave], keypointsAll);
-        orb.compute(pyramid[octave], keypointsAll, descriptorsAll);
+    orb->detectAndCompute(pyramid[octave], cv::noArray(), keypointsAll, descriptorsAll);
+    //对所有ImagePyramid图层进行提取ORB Features
+        //orb.detect(pyramid[octave], keypointsAll);
+        //orb.compute(pyramid[octave], keypointsAll, descriptorsAll);
 
         //Fix scale features
-		for (int i = 0; i < (int)keypointsAll.size(); i++)
+    for (int i = 0; i < static_cast<int>(keypointsAll.size()); i++)
 		{
 			auto &keypoint = keypointsAll[i];
 			void *descriptor = &descriptorsAll(i, 0);
@@ -206,16 +195,19 @@ void Keyframe::CreateKeypoints(const ImagePyramid1b &pyramid, std::vector<std::v
 			descriptorBuffers[octave].create(1, 32);
 
 		//Eigen
-		descriptors.push_back(EigenDescriptorMap(descriptorBuffers[octave].data, descriptorBuffers[octave].rows, descriptorBuffers[octave].cols));
+    //TODO: WHAT THE FUCK？？？
+    descriptors.push_back(EigenDescriptorMap(descriptorBuffers[octave].data,
+                                             descriptorBuffers[octave].rows,
+                                             descriptorBuffers[octave].cols));
 	}
 }
 
-void Keyframe::createKeypoints()
+void Keyframe::createKeypoints()   //TODO：对所有的产生Keypoints
 {
 	CreateKeypoints(mPyramid, *mKeypoints, mDescriptors, mDescriptorsEigen);
 }
 
-void Keyframe::freeSpace()
+void Keyframe::freeSpace()     //释放空间
 {
 	mPyramid.release();
 	mColorImage.release();
@@ -238,24 +230,6 @@ std::unique_ptr<Keyframe> Keyframe::copyWithoutFeatures() const
 	
 	return newFrame;
 }
-
-//cv::Matx<uchar, 1, 32> Keyframe::getDescriptor(int octave, int idx)
-//{
-//	assert(octave < (int)mDescriptors.size());
-//	auto &desc = mDescriptors[octave];
-//
-//	assert(idx < desc.rows);
-//	assert(32 == desc.cols);
-//	uchar *row = desc.ptr(idx);
-//
-//	cv::Matx<uchar, 1, 32> res;
-//	for (int i = 0; i < 32; i++)
-//	{
-//		res(0,i) = row[i];
-//	}
-//	
-//	return res;
-//}
 
 void Keyframe::removeMeasurement(FeatureMeasurement *m)
 {

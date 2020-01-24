@@ -79,8 +79,8 @@ public:
 	Eigen::Vector2d mParams;
 
 protected:
-	Eigen::Vector2f mPosition;	//Position in world coordinates
-	Eigen::Vector2f mPlusOneOffset;	//Relative offset that represents the offset of 1 pixel in the source image.
+  Eigen::Vector2f mPosition;	//Position in world coordinates  在世界坐标中的位置
+  Eigen::Vector2f mPlusOneOffset;	//Relative offset that represents the offset of 1 pixel in the source image. 相对偏移量，表示源图像中1个像素的偏移量。
 									//It determines the feature's scale.
 									//When (mPosition+mPlusOneOffset) is projected onto the source image it provides
 									//the position 1 pixel to the right of the center. This is used to choose the scale where

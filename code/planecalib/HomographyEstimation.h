@@ -19,9 +19,7 @@ namespace planecalib {
 
 class HomographyReprojectionError;
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // HomographyDistance
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 class HomographyDistance
 {
 public:
@@ -34,9 +32,7 @@ protected:
 	std::vector<Eigen::Vector2f> mPoints;
 };
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // HomographyRansac
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 struct HomographyIterationData
 {
 	std::vector<MatchReprojectionErrors> reprojectionErrors;
@@ -81,10 +77,8 @@ public:
 	const bool &getShowIterations() {return mShowIterations;}
 	void setShowIterations(bool value) {mShowIterations=value;}
 
-	////////////////////////////////////////////////
-	// Full homography estimation based on matches
-	////////////////////////////////////////////////
 
+  // Full homography estimation based on matches 基于匹配的全单应性估计
 	Eigen::Matrix3f estimate(const Eigen::Matrix3f &initial, const std::vector<Eigen::Vector2f> &left, const std::vector<Eigen::Vector2f> &right, const std::vector<float> &scales, float threshold, std::vector<bool> &inliers)
 	{
 		return estimateCeres(initial, left, right, scales, threshold, inliers);
@@ -95,9 +89,7 @@ public:
 
 	cv::Matx33f estimateCeres(const cv::Matx33f &initial, const std::vector<cv::Point2f> &left, const std::vector<cv::Point2f> &right, const std::vector<int> &octave, const std::vector<double> &weights, float threshold, std::vector<bool> &inliers);
 
-	////////////////////////////////////////////////
 	// Estimation based on direct pixel comparison
-	////////////////////////////////////////////////
     /**
      * @brief Estimates a similarity transform that minimizes the SSD between the aligned images.
      * This is the same method as used in PTAM.
@@ -107,10 +99,7 @@ public:
     bool estimateSimilarityDirect(const cv::Mat1b &imgRef, const cv::Mat1s &imgRefDx, const cv::Mat1s &imgRefDy, const cv::Mat1b &imgNew, cv::Matx23f &transform);
 
 
-	////////////////////////////////////////////////
 	// These versions are used for testing only (can be optimized a bit more)
-	////////////////////////////////////////////////
-
     //This version accepts a homography as input
     //The calculated similarity is applied on top of the input transform
     bool estimateSimilarityDirect(const cv::Mat1b &imgRef, const cv::Mat1b &imgNew, Eigen::Matrix3fr &transform);

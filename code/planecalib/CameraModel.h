@@ -15,9 +15,8 @@ namespace planecalib
 template<class TDistortionModel>
 class CameraModel_;
 
-//This typedef decides which camera model to use in the system
-//It has to be a typedef because ceres requires templated functions
-//to build the automatic diff cost functions and templated methods cannot be virtual.
+//This typedef decides which camera model to use in the system       this typedef决定系统中要使用的相机型号
+//It has to be a typedef because ceres requires templated functions to build the automatic diff cost functions and templated methods cannot be virtual.
 typedef CameraModel_<DivisionDistortionModel> CameraModel;
 
 template<class TDistortionModel_>
@@ -50,10 +49,10 @@ public:
 	Eigen::Vector4d getParams() const { return Eigen::Vector4d(mPrincipalPoint[0], mPrincipalPoint[1], mFocalLengths[0], mFocalLengths[1]); }
 	void setParams(const Eigen::Vector4d &params) 
 	{ 
-		mPrincipalPoint[0] = (float)params[0];
-		mPrincipalPoint[1] = (float)params[1];
-		mFocalLengths[0] = (float)params[2];
-		mFocalLengths[1] = (float)params[3];
+    mPrincipalPoint[0] = static_cast<float>(params[0]) ;
+    mPrincipalPoint[1] = static_cast<float>(params[0]);
+    mFocalLengths[0] = static_cast<float>(params[2]);
+    mFocalLengths[1] = static_cast<float>(params[3]);
 	}
 
 	const Eigen::Vector2i &getImageSize() const { return mImageSize; }
@@ -72,7 +71,6 @@ public:
 			p[0] >= 0 && p[1] >= 0 && p[0] < mImageSize[0] && p[1] < mImageSize[1]; //Inside image
 	}
 
-	//////////////////////////////////////
 	// Project form world
 	// Same code, one using return value, one using args by-reference (for ceres)
 	Eigen::Vector2f projectFromWorld(const Eigen::Vector3f &xc) const
@@ -83,6 +81,7 @@ public:
 	}
 
 	//Projects the point assuming focal lengths have already been applied
+  //假设已经应用焦距投射点
 	Eigen::Vector2f projectFromScaleSpace(const Eigen::Vector2f &pn) const
 	{
 		return mDistortionModel.apply(pn) + mPrincipalPoint;
@@ -108,6 +107,7 @@ public:
 	static void ProjectFromWorld(const Eigen::MatrixBase<TPPMat> &pp, const Eigen::MatrixBase<TDistortionParams> &distortionParams, const Eigen::MatrixBase<TFocalMat> &focal, const Eigen::MatrixBase<TXMat> &x, Eigen::MatrixBase<TPMat> &p)
 	{
 		static_assert(TPPMat::SizeAtCompileTime == 2, "Param pp must be of size 2");
+    //TODO:Why warning?
 		static_assert(TDistortionParams::SizeAtCompileTime == TDistortionModel::TParamVector::SizeAtCompileTime, "Param distortion wrong size");
 		static_assert(TFocalMat::SizeAtCompileTime == 2, "Param focal must be of size 2");
 		static_assert(TXMat::SizeAtCompileTime == 3, "Param x must be of size 3");
@@ -124,7 +124,6 @@ public:
 
 	void projectFromWorldJacobian(const Eigen::Vector3f &xc, Eigen::Vector3f &ujac, Eigen::Vector3f &vjac) const;
 
-	//////////////////////////////////////
 	// Unproject (assuming z=1)
 	Eigen::Vector3f unprojectToWorld(const Eigen::Vector2f &p) const
 	{
@@ -197,9 +196,7 @@ protected:
 	TDistortionModel mDistortionModel;
 };
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Template implementations
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }
 

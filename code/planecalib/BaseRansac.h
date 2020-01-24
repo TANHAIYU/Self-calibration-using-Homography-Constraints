@@ -15,8 +15,7 @@ template<class TModel, class TIterationData, int KMinConstraintCount>
 class BaseRansac {
 public:
 	BaseRansac():
-		//mGenerator(Profiler::Instance().now())
-		mGenerator(1), //Fix to avoid random tests
+    mGenerator(1), //Fix to avoid random tests 修复以避免随机测试
 		mConstraintCount(0),
 		mBestErrorSumSq(std::numeric_limits<float>::infinity()),
 		mBestInlierCount(0)
@@ -87,10 +86,7 @@ protected:
 	void ransacIteration();
 };
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
 // Template implementation
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-
 template<class TModel, class TIterationData, int KMinConstraintCount>
 void BaseRansac<TModel, TIterationData, KMinConstraintCount>::getRandomConstraintIndices(std::vector<int> &indices)
 {
@@ -104,10 +100,10 @@ void BaseRansac<TModel, TIterationData, KMinConstraintCount>::getRandomConstrain
 		bool randomOk=false;
 		while(!randomOk)
 		{
-			//Generate random index
+      //Generate random index 产生随机索引
 			indices[i] = distribution(mGenerator);
 
-			//Check for repeated indices
+      //Check for repeated indices 检查重复索引
 			randomOk = true;
 			for(int j=0; j<i; ++j)
 			{
@@ -137,7 +133,7 @@ void BaseRansac<TModel, TIterationData, KMinConstraintCount>::doRansac()
 	//getInliers(mBestModel, mBestInliers);
 	//DTSLAM_LOG << "Ransac: inliers with all constraints=" << mBestInliers.size()<<"\n";
 
-	//This can be parallelized
+  //这可以并行化
 	for(mIterationsMade=0; mIterationsMade<mMaxIterations;)
 	{
 		ransacIteration();
@@ -168,7 +164,7 @@ void BaseRansac<TModel, TIterationData, KMinConstraintCount>::ransacIteration()
 		float errorSumSq;
 		getInliers(model, inlierCount, errorSumSq, *data);
 
-		//Sync here if parallelized
+    //Sync here if parallelized 如果并行化，请在此处同步
 		//if(inlierCount > mBestInlierCount)
 		if(errorSumSq < mBestErrorSumSq)
 		{
@@ -181,5 +177,4 @@ void BaseRansac<TModel, TIterationData, KMinConstraintCount>::ransacIteration()
 }
 
 }
-
 #endif /* BASERANSAC_H_ */

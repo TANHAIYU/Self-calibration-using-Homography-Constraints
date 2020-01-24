@@ -6,22 +6,18 @@
  */
 
 #include "HomographyEstimation.h"
-
 #include <memory>
 #include <ceres/ceres.h>
 #include <opencv2/calib3d.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
-
 #include "log.h"
 #include "Profiler.h"
 #include "cvutils.h"
 
 namespace planecalib {
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // HomographyDistance
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 HomographyDistance::HomographyDistance(const Eigen::Vector2i &imageSize)
 {
 	mPoints.push_back(Eigen::Vector2f(0, 0));
@@ -42,9 +38,7 @@ float HomographyDistance::calculateSq(const Eigen::Matrix3f &h)
 	return totalSq;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // HomographyRansac
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 HomographyRansac::HomographyRansac()
 {
 }
@@ -64,7 +58,7 @@ void HomographyRansac::setData(const std::vector<FeatureMeasurement*> &measureme
 		auto &m = *mPtr;
 		mOwnRefPoints->push_back(m.getFeature().getPosition());
 		mOwnImgPoints->push_back(m.getPosition());
-		scales.push_back((float)(1<<m.getOctave()));
+    scales.push_back(static_cast<float>(1<<m.getOctave()));
 	}
 
 	setData(mOwnRefPoints.get(), mOwnImgPoints.get(), &scales);
@@ -79,7 +73,7 @@ void HomographyRansac::setData(const std::vector<FeatureMatch> &matches)
 	{
 		mOwnRefPoints->push_back(m.getFeature().getPosition());
 		mOwnImgPoints->push_back(m.getPosition());
-		scales.push_back((float)(1<<m.getOctave()));
+    scales.push_back(static_cast<float>(1<<m.getOctave()));
 	}
 
 	setData(mOwnRefPoints.get(), mOwnImgPoints.get(), &scales);
@@ -160,7 +154,7 @@ void HomographyRansac::getInliers(const Eigen::Matrix3dr &model, int &inlierCoun
 
 		double robustError[3];
 		robustLoss.Evaluate(errors.bestReprojectionErrorSq, robustError);
-		errorSumSq += (float)robustError[0];
+    errorSumSq += static_cast<float>(robustError[0]);
 	}
 }
 
@@ -260,7 +254,7 @@ cv::Matx33f HomographyEstimation::estimateOpenCV(const cv::Matx33f &initial, con
 {
 	std::vector<uchar> inliers2(left.size());
 	cv::Mat homo;
-	homo = cv::findHomography(right, left, inliers2, cv::RANSAC, threshold);
+  homo = cv::findHomography(right, left, inliers2, cv::RANSAC,static_cast<double>(threshold));
 	if(homo.empty())
 	{
 		MYAPP_LOG << "Homography estimation failed.\n";
@@ -276,7 +270,7 @@ cv::Matx33f HomographyEstimation::estimateOpenCV(const cv::Matx33f &initial, con
 
 bool HomographyEstimation::estimateSimilarityDirect(const cv::Mat1b &imgRef, const cv::Mat1b &imgNew, cv::Matx23f &transform)
 {
-    //Precalculate image jacobian
+    //Precalculate image jacobian  //预先计算图像雅各布
     cv::Mat1s imgRefDx;
     cv::Mat1s imgRefDy;
     cvutils::CalculateDerivatives(imgRef, imgRefDx, imgRefDy);
@@ -339,6 +333,7 @@ bool HomographyEstimation::estimateSimilarityDirect(const cv::Mat1b &imgRef, con
                 if(!value00 || !value01 || !value02 || !value10 || !value11 || !value12 || !value20 || !value21 || !value22)
                 {
                     continue;    //A zero value might be real but we assume that it is out of bounds after the warp
+                                 //零值可能是真实的，但我们认为它在翘曲之后超出范围
                 }
 
                 //Intensity jacobian
@@ -378,7 +373,7 @@ bool HomographyEstimation::estimateSimilarityDirect(const cv::Mat1b &imgRef, con
         for(int v = 0, j = 0; j < 3; j++)
             for(int i = 0; i <= j; i++)
             {
-				JtJ(j, i) = JtJ(i, j) = (float)JtJTriangle[v++];
+        JtJ(j, i) = JtJ(i, j) =static_cast<float>(JtJTriangle[v++]);
             }
 
         //Solve
@@ -417,10 +412,10 @@ bool HomographyEstimation::estimateSimilarityDirect(const cv::Mat1b &imgRef, con
 bool HomographyEstimation::estimateSimilarityDirect(const cv::Mat1b &imgRef, const cv::Mat1b &imgNew, Eigen::Matrix3fr &transform_)
 {
     bool converged = false;
-	cv::Matx33f transform = eutils::ToCV(transform_);
+    cv::Matx33f transform = eutils::ToCV(transform_);
     cv::Matx33f hInitial = transform;
 
-	cv::Vec2f center = cv::Vec2f((float)(imgRef.cols / 2), (float)(imgRef.rows / 2));
+    cv::Vec2f center = cv::Vec2f((float)(imgRef.cols / 2), (float)(imgRef.rows / 2));
     cv::Matx33f WfromC = cv::Matx33f::eye();
     WfromC(0, 2) = center[0];
     WfromC(1, 2) = center[1];
@@ -512,7 +507,7 @@ bool HomographyEstimation::estimateSimilarityDirect(const cv::Mat1b &imgRef, con
                                          0);
                 cv::Vec3f Jesm(Ji[0], Ji[1], +(v - center[1])*Ji[0] - (u - center[0])*Ji[1]);
 
-                float diff = (float)(imgWarped(v, u) - imgRef(v, u));
+                float diff = static_cast<float>(imgWarped(v, u) - imgRef(v, u));
                 score += diff * diff;
 
                 //Jaccum = sum(J'*y)
@@ -652,18 +647,18 @@ bool HomographyEstimation::estimateAffineDirect(const cv::Mat1b &imgRef, const c
 
                 //dX/dAffine jacobian
                 cv::Matx<float, 3, 9> Jw = cv::Matx<float, 3, 9>::zeros();
-				Jw(0, 0) = (float)u;
-				Jw(0, 1) = (float)v;
+        Jw(0, 0) = static_cast<float>(u);
+        Jw(0, 1) = static_cast<float>(v);
                 Jw(0, 2) = 1;
-				Jw(0, 6) = (float)(-u * u);
-				Jw(0, 7) = (float)(-u * v);
-				Jw(0, 8) = (float)(-u);
-				Jw(1, 3) = (float)u;
-				Jw(1, 4) = (float)v;
+        Jw(0, 6) = static_cast<float>(-u * u);
+        Jw(0, 7) = static_cast<float>(-u * v);
+        Jw(0, 8) = static_cast<float>(-u);
+        Jw(1, 3) = static_cast<float>(u);
+        Jw(1, 4) = static_cast<float>(v);
                 Jw(1, 5) = 1;
-				Jw(1, 6) = (float)(-v * u);
-				Jw(1, 7) = (float)(-v * v);
-				Jw(1, 8) = (float)(-v);
+        Jw(1, 6) = static_cast<float>(-v * u);
+        Jw(1, 7) = static_cast<float>(-v * v);
+        Jw(1, 8) = static_cast<float>(-v);
 
                 //dAffine/dParams jacobian
                 cv::Matx<float, 9, 6> Jg = cv::Matx<float, 9, 6>::zeros();
@@ -676,7 +671,7 @@ bool HomographyEstimation::estimateAffineDirect(const cv::Mat1b &imgRef, const c
 
                 cv::Vec6f Jesm = (cv::Mat)(Ji.t() * Jw * Jg).t();
 
-                float diff = (float)(imgWarped(v, u) - imgRef(v, u));
+                float diff = static_cast<float>(imgWarped(v, u) - imgRef(v, u));
                 score += diff * diff;
 
                 //Jaccum = sum(J'*y)
@@ -755,7 +750,7 @@ bool HomographyEstimation::estimateHomographyDirect(const cv::Mat1b &imgRef, con
 {
     bool converged = false;
 
-    //Initial transform
+    //Initial transform 初始化transformation
     cv::Vec<float, 9> params;
     for(int i=0; i<9; i++)
     	params[i] = transform.val[i];
@@ -811,7 +806,7 @@ bool HomographyEstimation::estimateHomographyDirect(const cv::Mat1b &imgRef, con
 
         transform = CtoC;
 
-        //Warp
+        //Warp 弯曲
         cv::warpPerspective(imgNew, imgWarped, transform, cv::Size(imgRef.cols, imgRef.rows), cv::INTER_LINEAR | cv::WARP_INVERSE_MAP);
 
 //        const std::string kWarpedWindow("Warped back to original");
@@ -853,18 +848,18 @@ bool HomographyEstimation::estimateHomographyDirect(const cv::Mat1b &imgRef, con
 
                 //dX/dAffine jacobian
                 cv::Matx<float, 3, 9> Jw = cv::Matx<float, 3, 9>::zeros();
-				Jw(0, 0) = (float)u;
-				Jw(0, 1) = (float)v;
+        Jw(0, 0) = static_cast<float>(u);
+        Jw(0, 1) = static_cast<float>(v);
                 Jw(0, 2) = 1;
-				Jw(0, 6) = (float)(-u * u);
-				Jw(0, 7) = (float)(-u * v);
-				Jw(0, 8) = (float)(-u);
-				Jw(1, 3) = (float)u;
-				Jw(1, 4) = (float)v;
+        Jw(0, 6) = static_cast<float>(-u * u);
+        Jw(0, 7) = static_cast<float>(-u * v);
+        Jw(0, 8) = static_cast<float>(-u);
+        Jw(1, 3) = static_cast<float>(u);
+        Jw(1, 4) = static_cast<float>(v);
                 Jw(1, 5) = 1;
-				Jw(1, 6) = (float)(-v * u);
-				Jw(1, 7) = (float)(-v * v);
-				Jw(1, 8) = (float)(-v);
+        Jw(1, 6) = static_cast<float>(-v * u);
+        Jw(1, 7) = static_cast<float>(-v * v);
+        Jw(1, 8) = static_cast<float>(-v);
 
                 //dAffine/dParams jacobian
                 cv::Matx<float, 9, 9> Jg = cv::Matx<float, 9, 9>::zeros();
@@ -882,7 +877,7 @@ bool HomographyEstimation::estimateHomographyDirect(const cv::Mat1b &imgRef, con
 
                 cv::Vec<float,9> Jesm = (cv::Mat)(Ji.t() * Jw * Jg).t();
 
-                float diff = (float)(imgWarped(v, u) - imgRef(v, u));
+                float diff = static_cast<float>(imgWarped(v, u) - imgRef(v, u));
                 score += diff * diff;
 
                 //Jaccum = sum(J'*y)

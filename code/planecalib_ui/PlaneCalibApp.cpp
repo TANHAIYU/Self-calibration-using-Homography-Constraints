@@ -248,6 +248,8 @@ void PlaneCalibApp::resize()
 bool PlaneCalibApp::initImageSrc()
 {
 	mUsingCamera = false;
+  //set videofile name
+  FLAGS_VideoFile = "/home/haiyutan/planecalib/datasets/Video1.mp4";
 	if(!FLAGS_VideoFile.empty())
 	{
 		//Use video file
@@ -264,7 +266,7 @@ bool PlaneCalibApp::initImageSrc()
 
 		MYAPP_LOG << "Opened video file succesfully\n";
 	}
-	else if(!FLAGS_ImageSequenceFormat.empty())
+  else if(!FLAGS_ImageSequenceFormat.empty())
 	{
 		//Use image sequence
 		std::string sequence = FLAGS_ImageSequenceFormat;
@@ -280,22 +282,22 @@ bool PlaneCalibApp::initImageSrc()
 
 		MYAPP_LOG << "Opened image sequence succesfully\n";
 	}
-	else
-	{
-		//Use camera
-		OpenCVDataSource *source = new OpenCVDataSource();
-	    mImageSrc.reset(source);
-	    if(!source->open(FLAGS_CameraId))
-	    {
-			MYAPP_LOG << "Error opening camera.\n";
-	        return false;
-	    }
+  else
+  {
+    //Use camera
+    OpenCVDataSource *source = new OpenCVDataSource();
+      mImageSrc.reset(source);
+      if(!source->open(FLAGS_CameraId))
+      {
+      MYAPP_LOG << "Error opening camera.\n";
+          return false;
+      }
 
-	    mUsingCamera = true;
-		MYAPP_LOG << "Camera opened succesfully\n";
-	}
+      mUsingCamera = true;
+    MYAPP_LOG << "Camera opened succesfully\n";
+  }
 
-	MYAPP_LOG << "Image source size: " << mImageSrc->getSourceSize() << "\n";
+  MYAPP_LOG << "Image source size: " << mImageSrc->getSourceSize() << "\n";
 
 	return true;
 }

@@ -2,7 +2,6 @@
 #include <memory>
 #include <iostream>
 #include "planecalib_ui/PlaneCalibApp.h"
-
 #include <planecalib_ui/UserInterfaceInfo.h>
 #include <GL/glew.h>
 #include <GL/freeglut.h>
@@ -13,8 +12,6 @@
 
 namespace planecalib
 {
-///////////////////////////////////////////////////////
-
 DEFINE_int32(PyramidMaxTopLevelWidth, 320, "Maximum width of the highest pyramid level for a frame.");
 DEFINE_int32(SBIMaxWidth, 60, "Maximum width for the Small Blurry Image, input will be downsampled until width is less than this.");
 DEFINE_int32(FeatureDetectorThreshold, 10, "Threshold for the keypoint detector");
@@ -31,10 +28,6 @@ DEFINE_bool(SingleThreaded, false, "Use a single thread for easier debugging.");
 DEFINE_string(RecordPath, "record/", "Path where the frames will be stored in case of recording.");
 DEFINE_string(RecordVideoFile, "video.avi", "Output video file for recording.");
 
-///////////////////////////////////////////////////////
-
-//DEFINE_int32(WindowWidth, 1280, "Initial width of the window.");
-//DEFINE_int32(WindowHeight, 960, "Initial height of the window.");
 DEFINE_int32(WindowWidth, 800, "Initial width of the window.");
 DEFINE_int32(WindowHeight, 600, "Initial height of the window.");
 
@@ -45,10 +38,10 @@ planecalib::PlaneCalibApp *gApp = NULL;
 
 int gWindowId;
 
-void changeSize(int w, int h)
+void changeSize(int w, int h) //（HAIYUTAN）
 {
-	planecalib::UserInterfaceInfo::Instance().setScreenSize(Eigen::Vector2i(w, h));
-	gApp->resize();
+  planecalib::UserInterfaceInfo::Instance().setScreenSize(Eigen::Vector2i(w, h));
+  gApp->resize();
 }
 
 
@@ -67,15 +60,15 @@ void renderScene(void)
 
 void pressKey(unsigned char key, int x, int y)
 {
-	planecalib::UserInterfaceInfo::Instance().setKeyState(key, true);
-	gApp->keyDown(false, key);
+  planecalib::UserInterfaceInfo::Instance().setKeyState(key, true);
+  gApp->keyDown(false, key);
 }
 
-void releaseKey(unsigned char key, int x, int y)
-{
-	planecalib::UserInterfaceInfo::Instance().setKeyState(key, false);
-	gApp->keyUp(false, key);
-}
+//void releaseKey(unsigned char key, int x, int y) //（HAIYUTAN）
+//{
+//	planecalib::UserInterfaceInfo::Instance().setKeyState(key, false);
+//	gApp->keyUp(false, key);
+//}
 
 void pressSpecial(int key, int x, int y)
 {
@@ -89,63 +82,56 @@ void releaseSpecial(int key, int x, int y)
 	gApp->keyUp(true, key);
 }
 
-void mouseEvent(int id, int state, int x, int y)
-{
-	if(state==GLUT_DOWN)
-		gApp->touchDown(id, x, y);
-	else if(state == GLUT_UP)
-		gApp->touchUp(id, x, y);
-}
+//void mouseEvent(int id, int state, int x, int y) //(HAIYUTAN)
+//{
+//	if(state==GLUT_DOWN)
+//		gApp->touchDown(id, x, y);
+//	else if(state == GLUT_UP)
+//		gApp->touchUp(id, x, y);
+//}
 
-void mouseMoveEvent(int x, int y)
-{
-	gApp->touchMove(x, y);
-}
+//void mouseMoveEvent(int x, int y) //(HAIYUTAN)
+//{
+//	gApp->touchMove(x, y);
+//}
 
-// void __declspec(dllexport) dummy()
-// {
-// 	//ceres::Solver::Options options;
-// 	//ceres::Solver::Summary s;
-// 	//ceres::Problem p;
-// 	//ceres::Solve(options, &p, &s);
-// }
 
 int main(int argc, char**argv)
 {
-	google::ParseCommandLineFlags(&argc, &argv, true);
+  //google::ParseCommandLineFlags(&argc, &argv, true);
 
 	//cv::Size initialSize(1980,1040);
-	Eigen::Vector2i initialSize(planecalib::FLAGS_WindowWidth, planecalib::FLAGS_WindowHeight);
+  Eigen::Vector2i initialSize(planecalib::FLAGS_WindowWidth, planecalib::FLAGS_WindowHeight);
 
 	//init GLUT and create window
 	glutInit(&argc, argv );
-	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA | GLUT_ALPHA | GLUT_MULTISAMPLE);
+  glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA | GLUT_ALPHA | GLUT_MULTISAMPLE); //（HAIYUTAN）
 	//glutInitWindowPosition(900,10);
-	glutInitWindowSize(initialSize.x(),initialSize.y());
-	planecalib::UserInterfaceInfo::Instance().setScreenSize(initialSize);
-	gWindowId = glutCreateWindow("planecalib");
+  glutInitWindowSize(initialSize.x(),initialSize.y());
+  planecalib::UserInterfaceInfo::Instance().setScreenSize(initialSize);
+  gWindowId = glutCreateWindow("mrt_planecalib");
 
 	//Glew
-	if(glewInit() != GLEW_OK)
-	{
-		MYAPP_LOG << "Error initializing GLEW!\n";
-		return 0;
-	}
+  if(glewInit() != GLEW_OK)
+  {
+    MYAPP_LOG << "Error initializing GLEW!\n";
+    return 0;
+  }
 
 	// register callbacks
-	glutDisplayFunc(renderScene);
-	glutReshapeFunc(changeSize);
-	glutIdleFunc(renderScene);
+  glutDisplayFunc(renderScene);  //（HAIYUTAN）
+  glutReshapeFunc(changeSize);   //（HAIYUTAN）
+  glutIdleFunc(renderScene);
 
-	glutIgnoreKeyRepeat(0);
-	glutKeyboardFunc(pressKey);
-	glutKeyboardUpFunc(releaseKey);
-	glutSpecialFunc(pressSpecial);
-	glutSpecialUpFunc(releaseSpecial);
-	glutMouseFunc(mouseEvent);
-	glutMotionFunc(mouseMoveEvent);
+  //glutIgnoreKeyRepeat(0);       //（HAIYUTAN）
+  glutKeyboardFunc(pressKey);
+  //glutKeyboardUpFunc(releaseKey);  //（HAIYUTAN）
+  //glutSpecialFunc(pressSpecial);   //（HAIYUTAN）
+  //glutSpecialUpFunc(releaseSpecial);  //（HAIYUTAN）
+  //glutMouseFunc(mouseEvent);        //（HAIYUTAN）
+  //glutMotionFunc(mouseMoveEvent);   //（HAIYUTAN）
 	
-	glEnable(GL_MULTISAMPLE);
+  //glEnable(GL_MULTISAMPLE);    //（HAIYUTAN）
 
 	gApp = new planecalib::PlaneCalibApp();
 
@@ -156,7 +142,7 @@ int main(int argc, char**argv)
 	}
 
 	// enter GLUT event processing cycle
-	glutMainLoop();
+  glutMainLoop();             //（HAIYUTAN）
 
 	return 0;
 }

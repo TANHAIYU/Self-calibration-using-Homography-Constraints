@@ -151,7 +151,8 @@ public:
 	void init(const cv::Mat3b &imageColor, const cv::Mat1b &imageGray);
 	void init(const TrackingFrame &other);
 	
-	static void CreateKeypoints(const ImagePyramid1b &pyramid, std::vector<std::vector<cv::KeyPoint>> &keypoints, std::vector<cv::Mat1b> &descriptorBuffers, std::vector<EigenDescriptorMap> &descriptors);
+  static void CreateKeypoints(const ImagePyramid1b &pyramid, std::vector<std::vector<cv::KeyPoint>> &keypoints,
+                              std::vector<cv::Mat1b> &descriptorBuffers, std::vector<EigenDescriptorMap> &descriptors);
 
 	std::unique_ptr<Keyframe> copyWithoutFeatures() const;
 

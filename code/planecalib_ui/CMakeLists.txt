@@ -2,7 +2,6 @@
 # planecalib_ui lib
 ##################################
 
-##################################
 # Sources
 
 #Add all files
@@ -16,7 +15,7 @@ GroupSources(planecalib_ui)
 # Target
 
 add_library(planecalib_ui ${sources_cpp} ${sources_h} ${sources_frag} ${sources_vert})
-target_link_libraries (planecalib_ui planecalib glew freeglut)
+target_link_libraries (planecalib_ui planecalib glew glut)
 if(matio_FOUND)
     target_link_libraries (planecalib_ui matio)
 endif()

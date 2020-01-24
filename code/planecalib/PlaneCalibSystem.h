@@ -57,6 +57,7 @@ public:
 	void processImage(double timestamp, cv::Mat3b &imgColor, cv::Mat1b &imgGray);
 	
 	//Handles thread creation and other maintenance. This should be called when idle and after processImage().
+  //处理线程创建和其他维护。 应该在空闲时和processImage（）之后调用。
 	void idle();
 
 	void doHomographyBA();
@@ -85,26 +86,17 @@ protected:
 	std::unique_ptr<PoseTracker> mTracker;
 	int mSuccesfulTrackCount;
 
-	//std::unique_ptr<SlamMapExpander> mMapExpander;
 	std::unique_ptr<HomographyCalibration> mCalib;
 
 	std::atomic<bool> mExpanderCheckPending;
 
 	std::future<Keyframe *> mExpanderFuture;
 	std::atomic<bool> mExpanderFinished;
-	//std::atomic<bool> mExpanderAdding;
-
-	//std::future<void> mBAFuture;
-	//std::atomic<bool> mBAFinished;
 
 	////////////////////////////////////////////////////////
 	// Methods
 
 	void createKeyframe();
-	//std::unique_ptr<SlamMapExpander::CheckData> createDataForExpander();
-
-	//static Keyframe *ExpanderTask(PlaneCalibSystem *system, MapExpander::CheckData *dataPtr, bool useLocks);
-	//Keyframe *expanderTask(std::unique_ptr<MapExpander::CheckData> data, bool useLocks);
 
 public:
 };

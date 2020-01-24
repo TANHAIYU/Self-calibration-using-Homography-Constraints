@@ -11,17 +11,15 @@
 namespace planecalib
 {
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 // Fixed3DNormParametrization
-///////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Calculates two vectors that are orthogonal to X.
+// Calculates two vectors that are orthogonal to X.  计算两个与X正交的向量。
 // It first picks a non-colinear point C then basis1=(X-C) x C and basis2=X x basis1
 void Fixed3DNormParametrization::GetBasis(const double *x, double *basis1, double *basis2)
 {
     const double kThreshold = 0.1;
 
-    //Check that the point we use is not colinear with x
+    //Check that the point we use is not colinear with x 检查我们使用的点与x不共线
     if (x[1] > kThreshold || x[1] < -kThreshold || x[2] > kThreshold || x[2] < -kThreshold)
     {
         //Use C=[1,0,0]
@@ -111,33 +109,31 @@ bool Fixed3DNormParametrization::ComputeJacobian(const double *x, double *jacobi
     return true;
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 // Fixed4DNormParametrization
-///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Calculates 3 vectors that are orthogonal to X.
 void Fixed4DNormParametrization::GetBasis(const double *x, double *basis1, double *basis2, double *basis3)
 {
-	cv::Matx41f xmat((float)x[0], (float)x[1], (float)x[2], (float)x[3]);
+  cv::Matx41f xmat(static_cast<float>(x[0]), static_cast<float>(x[1]), static_cast<float>(x[2]), static_cast<float>(x[3]));
 	cv::Matx44f umat;
 	cv::Matx<float,1,1> wmat;
 	cv::Matx<float,1,1> vtmat;
 	cv::SVDecomp(xmat, wmat, umat, vtmat, cv::SVD::MODIFY_A | cv::SVD::FULL_UV);
 
-	basis1[0] = umat(0,1);
-	basis1[1] = umat(1,1);
-	basis1[2] = umat(2,1);
-	basis1[3] = umat(3,1);
+  basis1[0] = static_cast<double>(umat(0,1));
+  basis1[1] = static_cast<double>(umat(1,1));
+  basis1[2] = static_cast<double>(umat(2,1));
+  basis1[3] = static_cast<double>(umat(3,1));
 
-	basis2[0] = umat(0,2);
-	basis2[1] = umat(1,2);
-	basis2[2] = umat(2,2);
-	basis2[3] = umat(3,2);
+  basis2[0] = static_cast<double>(umat(0,2));
+  basis2[1] = static_cast<double>(umat(1,2));
+  basis2[2] = static_cast<double>(umat(2,2));
+  basis2[3] = static_cast<double>(umat(3,2));
 
-	basis3[0] = umat(0,3);
-	basis3[1] = umat(1,3);
-	basis3[2] = umat(2,3);
-	basis3[3] = umat(3,3);
+  basis3[0] = static_cast<double>(umat(0,3));
+  basis3[1] = static_cast<double>(umat(1,3));
+  basis3[2] = static_cast<double>(umat(2,3));
+  basis3[3] = static_cast<double>(umat(3,3));
 }
 
 bool Fixed4DNormParametrization::Plus(const double *x, const double *delta, double *x_plus_delta) const
@@ -146,7 +142,7 @@ bool Fixed4DNormParametrization::Plus(const double *x, const double *delta, doub
     double basis2[4];
     double basis3[4];
 
-    //Translation is constrained
+    //Translation is constrained     Translation受到限制
     GetBasis(x, basis1, basis2, basis3);
 
     x_plus_delta[0] = x[0] + delta[0] * basis1[0] + delta[1] * basis2[0] + delta[2] * basis3[0];

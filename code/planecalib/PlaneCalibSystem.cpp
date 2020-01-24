@@ -1,4 +1,3 @@
-
 #include "PlaneCalibSystem.h"
 #include <chrono>
 #include <opencv2/imgproc.hpp>
@@ -283,10 +282,10 @@ void PlaneCalibSystem::createKeyframe()
 	}
 	//Create descriptors
     //Different opencv version:
-	//cv::Ptr<cv::ORB> orb = cv::ORB::create(2000, 2, 1);
-	//orb->setEdgeThreshold(0);
-    cv::ORB orb(2000, 2, 1, 0);
-	for (int octave = 0; octave < (int)matchesByOctave.size(); octave++)
+	cv::Ptr<cv::ORB> orb = cv::ORB::create(2000, 2, 1);
+	orb->setEdgeThreshold(0);
+    //cv::ORB orb(2000, 2, 1, 0);
+  for (int octave = 0; octave < (int)matchesByOctave.size(); octave++)
 	{
 		if (keypointsByOctave.empty())
 			continue;
@@ -294,9 +293,9 @@ void PlaneCalibSystem::createKeyframe()
 		//ORB features
 		cv::Mat1b descriptorBuffer;
         //Different opencv version:
-		//orb->detectAndCompute(frame->getImage(octave), cv::noArray(), keypointsByOctave[octave], descriptorBuffer, true);
-        orb.detect(frame->getImage(octave), keypointsByOctave[octave]);
-        orb.compute(frame->getImage(octave), keypointsByOctave[octave], descriptorBuffer);
+		orb->detectAndCompute(frame->getImage(octave), cv::noArray(), keypointsByOctave[octave], descriptorBuffer, true);
+        //orb.detect(frame->getImage(octave), keypointsByOctave[octave]);
+        //orb.compute(frame->getImage(octave), keypointsByOctave[octave], descriptorBuffer);
 
 		//Create measurement
 		for (int i = 0; i < (int)matchesByOctave[octave].size(); i++)
@@ -305,7 +304,7 @@ void PlaneCalibSystem::createKeyframe()
 			uchar *descriptor = &descriptorBuffer(i, 0);
 			auto m = make_unique<FeatureMeasurement>(const_cast<Feature*>(&match.getFeature()), frame, match.getPosition(), octave, descriptor);
 
-			//Save measurement
+      //Save measurement  保存测量
 			frame->getMeasurements().push_back(m.get());
 			m->getFeature().getMeasurements().push_back(std::move(m));
 		}
@@ -387,7 +386,7 @@ void PlaneCalibSystem::doFullBA()
 		}
 		else
 		{
-			//Set pose for reference frame
+      //Set pose for reference frame 设置参考系的姿势
 			Keyframe &refFrame = *mMap->getKeyframes()[0];
 
 			Eigen::Vector3f basis1, basis2, basis3;
@@ -418,7 +417,7 @@ void PlaneCalibSystem::doFullBA()
 			//auto k = mCamera.getK();
 			//cv::Mat1f cvK(3, 3, const_cast<float*>(k.data()));
 
-			//Triangulate all features
+      //Triangulate all features 三角化所有features
 			for (auto &pfeature : mMap->getFeatures())
 			{
 				auto &feature = *pfeature;
@@ -427,8 +426,7 @@ void PlaneCalibSystem::doFullBA()
 				Eigen::Vector3f xdir = refFrame.mPose3DR.transpose()*xn;
 		
 				//Intersect with plane
-				//If point in line is x=a*t + b
-				//and point in plane is dot(x,n)-d = 0
+        //If point in line is x=a*t + b and point in plane is dot(x,n)-d = 0
 				//then t=(d-dot(b,n))/dot(a,n)
 				//and x = a*(d-dot(b,n))/dot(a,n) + b
 				//
@@ -443,7 +441,7 @@ void PlaneCalibSystem::doFullBA()
 				//Eigen::Vector2f imagePosClean2 = mCamera.projectFromWorld(xnt2);
 			}
 
-			//Estimate frame positions
+      //Estimate frame positions 估计frame位置
 			for (auto &framep : mMap->getKeyframes())
 			{
 				auto &frame = *framep;
@@ -483,7 +481,6 @@ void PlaneCalibSystem::doFullBA()
 				refiner.refinePose(refPoints, imgPoints, scales, frame.mPose3DR, frame.mPose3DT, inlierCount, errors);
 				//Save
 				//cv::Rodrigues(rvec, cvR);
-		
 				//frame.mPose3DR = mapR.cast<float>();
 				//frame.mPose3DT[0] = (float)tvec(0, 0);
 				//frame.mPose3DT[1] = (float)tvec(1, 0);

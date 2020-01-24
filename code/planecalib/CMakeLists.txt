@@ -1,9 +1,6 @@
-##################################
 # planecalib lib
-##################################
+cmake_minimum_required(VERSION 3.0)
 
-##################################
-# Sources
 
 #Add all files
 file(GLOB_RECURSE sources_cpp *.cpp)
@@ -13,9 +10,7 @@ GroupSources(planecalib)
 
 configure_file(ProjectConfig.h.in ProjectConfig.h)
 
-##################################
 # Target
-
 add_library(planecalib ${sources_cpp} ${sources_h} ${sources_hpp})
 target_include_directories(planecalib PUBLIC ${CERES_INCLUDE_DIRS})
 target_link_libraries(planecalib PUBLIC  eigen glog gflags ceres ${OpenCV_LIBRARIES})

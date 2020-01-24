@@ -1,10 +1,3 @@
-/*
- * PoseTracker.cpp
- *
- *  Created on: 9.2.2014
- *      Author: dan
- */
-
 #include "PoseTracker.h"
 
 #include <limits>
@@ -32,7 +25,7 @@ void PoseTracker::init(const Eigen::Vector2i &imageSize, int octaveCount)
 
 	//mIsLost = false;
 
-	//Translate search radius to normalized units
+  //Translate search radius to normalized units 将搜索半径转换为归一化单位
 	mMatcherSearchRadius = (1<<(octaveCount-1)) * FLAGS_MatcherPixelSearchDistance;
 	MYAPP_LOG << "PoseTracker: Matcher search radius = " << mMatcherSearchRadius << "px in image res\n";
 

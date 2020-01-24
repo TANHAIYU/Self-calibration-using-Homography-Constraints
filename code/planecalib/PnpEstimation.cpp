@@ -11,7 +11,6 @@ namespace planecalib {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // PnPRansac
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 PnPRansac::PnPRansac()
 {
 }
@@ -68,6 +67,7 @@ void PnPRansac::setData(const std::vector<Eigen::Vector3f> *refPoints, const std
 
 	//Normalize
 	//TODO: this will break with fish-eye lenses, but cv::triangulate and cv:solvePnP can only take 2D points
+  //这将用鱼眼镜头打断，但是cv :: triangulate和cv：solvePnP只能取2D点
 	mOwnImgPoints->resize(mMatchCount);
 	for (int i = 0; i != mMatchCount; ++i)
 	{
@@ -138,7 +138,6 @@ void PnPRansac::getInliers(const std::pair<Eigen::Matrix3dr, Eigen::Vector3d> &m
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // PnPRefiner
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void PnPRefiner::getInliers(const std::vector<Eigen::Vector3f> &refPoints,
 	const std::vector<Eigen::Vector2f> &imgPoints,
 	const std::vector<float> &scales,
@@ -231,8 +230,10 @@ void PnPRefiner::refinePose(const std::vector<Eigen::Vector3f> &refPoints,
 	options.linear_solver_type = ceres::DENSE_QR;
 	//options.dense_linear_algebra_library_type = ceres::LAPACK;
 
-	options.num_threads = 1; //Multi-threading here adds too much overhead
-	options.num_linear_solver_threads = 1;
+  options.num_threads = 1;
+  //Multi-threading here adds too much overhead
+  //TODO：num_linear_solver_threads？？
+  options.num_linear_solver_threads = 1;//我改的
 
 	options.logging_type = ceres::SILENT;
 	options.minimizer_progress_to_stdout = false;
