@@ -125,13 +125,6 @@ void BaseRansac<TModel, TIterationData, KMinConstraintCount>::doRansac()
 
 	mBestInlierCount = 0;
 	mBestErrorSumSq = std::numeric_limits<float>::infinity();
-	//Calculate initial model with all
-	//std::vector<int> allIndices(mConstraintCount);
-	//for(int i=0; i<mConstraintCount; ++i)
-	//	allIndices[i] = i;
-	//mBestModel = modelFromInliers(allIndices);
-	//getInliers(mBestModel, mBestInliers);
-	//DTSLAM_LOG << "Ransac: inliers with all constraints=" << mBestInliers.size()<<"\n";
 
   //这可以并行化
 	for(mIterationsMade=0; mIterationsMade<mMaxIterations;)

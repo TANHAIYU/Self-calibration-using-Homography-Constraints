@@ -1,10 +1,3 @@
-/*
- * BundleAdjuster.h
- *
- *  Created on: 6.3.2014
- *      Author: dan
- */
-
 #ifndef BUNDLEADJUSTER_H_
 #define BUNDLEADJUSTER_H_
 
@@ -74,4 +67,4 @@ protected:
 
 }
 
-#endif /* BUNDLEADJUSTER_H_ */
+#endif

@@ -9,7 +9,6 @@
 #include "shared_mutex.h"
 #include "Profiler.h"
 #include "CeresParametrization.h"
-//#include "ReprojectionError3D.h"
 #include "CameraDistortionModel.h"
 #include "CameraModelCeres.h"
 #include "PoseTracker.h"
@@ -287,12 +286,6 @@ bool CalibratedBundleAdjuster::bundleAdjust()
 			for (auto &mPtr : feature.getMeasurements())
 			{
 				FeatureMeasurement &m = *mPtr;
-				//if (m.getOctave() > 0)
-				//	continue;
-				//const int kMargin = 200;
-				//if (m.getPosition()[0] < kMargin || m.getPosition()[1] <kMargin || m.getPosition()[0] >(1920 - kMargin) || m.getPosition()[1] > (1080 - kMargin))
-				//	continue;
-
 				mMeasurementsInProblem.push_back(&m);
 			}
 		}
