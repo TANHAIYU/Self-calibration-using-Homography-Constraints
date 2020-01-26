@@ -1,10 +1,3 @@
-///*
-// * FeatureMatcher.cpp
-// *
-// *  Created on: 9.2.2014
-// *      Author: dan
-// */
-//
 //#include "FeatureMatcher.h"
 //#include "Profiler.h"
 //#include "log.h"
@@ -469,11 +462,7 @@
 //		}
 //	}
 //
-////	if(positions.empty())
-////	{
-////		DTSLAM_LOG << "AHHH NOT FOUND!\n";
-////	}
 //	return !positions.empty();
 //}
 //
-//} /* namespace dtslam */
+//}

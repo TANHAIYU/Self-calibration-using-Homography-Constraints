@@ -1,10 +1,3 @@
-/*
- * BundleAdjuster.cpp
- *
- *  Created on: 6.3.2014
- *      Author: dan
- */
-
 #include "BundleAdjuster.h"
 #include "gflags/gflags.h"
 #include <opencv2/calib3d.hpp>
@@ -139,7 +132,7 @@ void BundleAdjuster::addFrameToAdjust(Keyframe &newFrame)
     {
       Feature &feature = (*itM)->getFeature();
 
-      //We need at least two measurements to bundle adjust 我们至少需要两次测量才能进行BA
+      //我们至少需要两次测量才能进行BA
       if(feature.getMeasurements().size() > 1)
       {
         mFeaturesToAdjust.insert(&feature);

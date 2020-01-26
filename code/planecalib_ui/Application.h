@@ -1,10 +1,3 @@
-/*
- * Application.h
- *
- *  Created on: Nov 6, 2012
- *      Author: dpajak
- */
-
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 

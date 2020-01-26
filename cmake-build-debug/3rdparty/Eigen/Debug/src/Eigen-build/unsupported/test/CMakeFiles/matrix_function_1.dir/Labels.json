@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/haiyutan/planecalib/3rdparty/eigen-3.2.2/unsupported/test/matrix_function.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildUnsupported"
+		],
+		"name" : "matrix_function_1"
+	}
+}

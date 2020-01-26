@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/CMakeFiles/freeglut"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/CMakeFiles/freeglut.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/CMakeFiles/freeglut-complete.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-install.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-mkdir.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-download.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-update.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-patch.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-configure.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"freeglut"
+		],
+		"name" : "freeglut"
+	}
+}

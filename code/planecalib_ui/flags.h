@@ -1,15 +1,6 @@
-/*
- * flags.h
- *
- *  Created on: 29.6.2014
- *      Author: dan
- */
-
 #ifndef planecalib_FLAGS_UI_H_
 #define planecalib_FLAGS_UI_H_
 
-//#undef GFLAGS_DLL_DEFINE_FLAG
-//#define GFLAGS_DLL_DEFINE_FLAG
 #include <gflags/gflags.h>
 
 namespace planecalib
@@ -23,7 +14,6 @@ namespace planecalib
 	DECLARE_bool(SingleThreaded);
 	DECLARE_string(RecordPath);
 	DECLARE_string(RecordVideoFile);
-	//
 	//DECLARE_double(MapDrawScale);
 }
 

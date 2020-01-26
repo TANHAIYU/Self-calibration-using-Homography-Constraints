@@ -1,10 +1,3 @@
-/*
- * ImagePyramid.h
- *
- *  Created on: 8.2.2014
- *      Author: dan
- */
-
 #ifndef IMAGEPYRAMID_H_
 #define IMAGEPYRAMID_H_
 

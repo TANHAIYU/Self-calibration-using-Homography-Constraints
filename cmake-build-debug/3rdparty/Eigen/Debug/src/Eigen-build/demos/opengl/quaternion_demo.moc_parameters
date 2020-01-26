@@ -1,0 +1,14 @@
+-I/home/haiyutan/planecalib/3rdparty/eigen-3.2.2
+-I/home/haiyutan/planecalib/cmake-build-debug/3rdparty/Eigen/Debug/src/Eigen-build
+-I/usr/include/qt4
+-I/usr/include/qt4/QtOpenGL
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-I/usr/include/qt4
+-D$<$<NOT:$<CONFIG:Debug>>:QT_NO_DEBUG>
+-DQT_OPENGL_LIB
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-o
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/Eigen/Debug/src/Eigen-build/demos/opengl/quaternion_demo.moc
+/home/haiyutan/planecalib/3rdparty/eigen-3.2.2/demos/opengl/quaternion_demo.h

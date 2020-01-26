@@ -1,0 +1,13 @@
+# Target labels
+ SuiteSparse
+# Source files and their labels
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/CMakeFiles/SuiteSparse
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/CMakeFiles/SuiteSparse.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/CMakeFiles/SuiteSparse-complete.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-stamp/SuiteSparse-install.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-stamp/SuiteSparse-mkdir.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-stamp/SuiteSparse-download.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-stamp/SuiteSparse-update.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-stamp/SuiteSparse-patch.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-stamp/SuiteSparse-configure.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-stamp/SuiteSparse-build.rule

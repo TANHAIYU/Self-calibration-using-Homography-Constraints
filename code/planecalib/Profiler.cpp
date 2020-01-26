@@ -1,10 +1,3 @@
-/*
- * Profiler.cpp
- *
- *  Created on: May 9, 2013
- *      Author: danielh
- */
-
 #include "Profiler.h"
 
 namespace planecalib

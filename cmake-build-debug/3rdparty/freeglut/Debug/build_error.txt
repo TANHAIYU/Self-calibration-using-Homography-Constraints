@@ -1,0 +1,43 @@
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_gamemode.c: In function ‘glutEnterGameMode’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_gamemode.c:737:9: warning: implicit declaration of function ‘usleep’; did you mean ‘fseek’? [-Wimplicit-function-declaration]
+         usleep( 100 );
+         ^~~~~~
+         fseek
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_input_devices.c: In function ‘serial_close’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_input_devices.c:291:9: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+         close(port->fd);
+         ^~~~~
+         pclose
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_input_devices.c: In function ‘serial_getchar’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_input_devices.c:300:9: warning: implicit declaration of function ‘read’; did you mean ‘fread’? [-Wimplicit-function-declaration]
+     if (read(port->fd,&ch,1)) return ch;
+         ^~~~
+         fread
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_input_devices.c: In function ‘serial_putchar’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_input_devices.c:306:12: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+     return write(port->fd,&ch,1);
+            ^~~~~
+            fwrite
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_joystick.c: In function ‘fghJoystickRawRead’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_joystick.c:697:18: warning: implicit declaration of function ‘read’; did you mean ‘fread’? [-Wimplicit-function-declaration]
+         status = read ( joy->fd, &joy->js, sizeof(struct js_event) );
+                  ^~~~
+                  fread
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_joystick.c: In function ‘fghJoystickInit’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_joystick.c:1596:9: warning: implicit declaration of function ‘access’; did you mean ‘Success’? [-Wimplicit-function-declaration]
+     if( access( fgJoystick[ ident ]->fname, F_OK ) != 0 )
+         ^~~~~~
+         Success
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_joystick.c: In function ‘fgJoystickClose’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_joystick.c:1662:17: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+                 close( fgJoystick[ ident ]->fd );
+                 ^~~~~
+                 pclose
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_structure.c: In function ‘fghcbMenuByID’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_structure.c:539:21: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     if( menu->ID == (int)(enumerator->data) )
+                     ^
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_structure.c: In function ‘fgMenuByID’:
+/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_structure.c:558:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+     enumerator.data = (void *)menuID;
+                       ^

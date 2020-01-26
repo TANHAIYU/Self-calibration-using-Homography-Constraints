@@ -1,10 +1,3 @@
-/*
- * UserInterfaceInfo.cpp
- *
- *  Created on: 3.2.2014
- *      Author: dan
- */
-
 #include "UserInterfaceInfo.h"
 
 namespace planecalib {

@@ -1,10 +1,3 @@
-/*
- * Profiler.h
- *
- *  Created on: May 9, 2013
- *      Author: danielh
- */
-
 #ifndef PROFILER_H_
 #define PROFILER_H_
 

@@ -1,10 +1,3 @@
-/*
- * VideoImageDataSource.h
- *
- *  Created on: Jul 10, 2013
- *      Author: danielh
- */
-
 #ifndef OPENCV_IMAGEDATASOURCE_H_
 #define OPENCV_IMAGEDATASOURCE_H_
 

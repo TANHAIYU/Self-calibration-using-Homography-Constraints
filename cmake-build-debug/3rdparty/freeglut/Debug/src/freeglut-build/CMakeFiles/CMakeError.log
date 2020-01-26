@@ -1,0 +1,27 @@
+Determining if files usbhid.h exist failed with the following output:
+Change Dir: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3bd3a/fast && make[3]: 进入目录“/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build/CMakeFiles/CMakeTmp”
+/usr/bin/make -f CMakeFiles/cmTC_3bd3a.dir/build.make CMakeFiles/cmTC_3bd3a.dir/build
+make[4]: 进入目录“/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3bd3a.dir/HAVE_USBHID_H.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_3bd3a.dir/HAVE_USBHID_H.c.o   -c /home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build/CMakeFiles/CheckIncludeFiles/HAVE_USBHID_H.c
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build/CMakeFiles/CheckIncludeFiles/HAVE_USBHID_H.c:2:10: fatal error: usbhid.h: 没有那个文件或目录
+ #include <usbhid.h>
+          ^~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_3bd3a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3bd3a.dir/HAVE_USBHID_H.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_3bd3a.dir/HAVE_USBHID_H.c.o] Error 1
+make[4]: 离开目录“/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build/CMakeFiles/CMakeTmp”
+Makefile:121: recipe for target 'cmTC_3bd3a/fast' failed
+make[3]: *** [cmTC_3bd3a/fast] Error 2
+make[3]: 离开目录“/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build/CMakeFiles/CMakeTmp”
+
+
+Source:
+/* */
+#include <usbhid.h>
+
+
+int main(void){return 0;}
+

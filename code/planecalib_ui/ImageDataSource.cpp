@@ -1,10 +1,3 @@
-/*
- * ImageDataSource.cpp
- *
- *  Created on: 16.4.2014
- *      Author: dherrera
- */
-
 #include "ImageDataSource.h"
 #include <opencv2/imgproc.hpp>
 #include "planecalib/cvutils.h"

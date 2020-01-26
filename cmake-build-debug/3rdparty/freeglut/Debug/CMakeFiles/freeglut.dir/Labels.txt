@@ -1,0 +1,13 @@
+# Target labels
+ freeglut
+# Source files and their labels
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/CMakeFiles/freeglut
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/CMakeFiles/freeglut.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/CMakeFiles/freeglut-complete.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-install.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-mkdir.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-download.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-update.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-patch.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-configure.rule
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-stamp/freeglut-build.rule

@@ -1,10 +1,3 @@
-/*
- * cvutils.cpp
- *
- *  Created on: 9.2.2014
- *      Author: dan
- */
-
 #include "cvutils.h"
 #include <opencv2/imgproc.hpp>
 

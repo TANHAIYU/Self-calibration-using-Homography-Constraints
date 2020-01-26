@@ -1,10 +1,3 @@
-/*
- * HomographyReprojectionError.h
- *
- *  Created on: 29.1.2014
- *      Author: Dan
- */
-
 #ifndef HOMOGRAPHYREPROJECTIONERROR_H_
 #define HOMOGRAPHYREPROJECTIONERROR_H_
 

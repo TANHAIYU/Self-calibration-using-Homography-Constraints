@@ -1,10 +1,3 @@
-/*
- * ImagePyramid.cpp
- *
- *  Created on: 8.2.2014
- *      Author: dan
- */
-
 #include "ImagePyramid.h"
 
 #include <opencv2/imgproc.hpp>

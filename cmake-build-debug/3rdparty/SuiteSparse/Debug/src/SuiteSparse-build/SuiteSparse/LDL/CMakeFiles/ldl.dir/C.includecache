@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/haiyutan/planecalib/3rdparty/suitesparse-metis-for-windows-1.2.1/SuiteSparse/LDL/Include/ldl.h
+SuiteSparse_config.h
+/home/haiyutan/planecalib/3rdparty/suitesparse-metis-for-windows-1.2.1/SuiteSparse/LDL/Include/SuiteSparse_config.h
+
+/home/haiyutan/planecalib/3rdparty/suitesparse-metis-for-windows-1.2.1/SuiteSparse/LDL/Source/ldl.c
+ldl.h
+/home/haiyutan/planecalib/3rdparty/suitesparse-metis-for-windows-1.2.1/SuiteSparse/LDL/Source/ldl.h
+
+/home/haiyutan/planecalib/3rdparty/suitesparse-metis-for-windows-1.2.1/SuiteSparse/LDL/SourceWrappers/ldl.o.c
+../Source/ldl.c
+-
+
+/home/haiyutan/planecalib/3rdparty/suitesparse-metis-for-windows-1.2.1/SuiteSparse/LDL/SourceWrappers/ldll.o.c
+../Source/ldl.c
+-
+
+/home/haiyutan/planecalib/3rdparty/suitesparse-metis-for-windows-1.2.1/SuiteSparse/SuiteSparse_config/SuiteSparse_config.h
+limits.h
+-
+stdlib.h
+-
+math.h
+-
+

@@ -1,10 +1,3 @@
-/*
- * cvutils.h
- *
- *  Created on: 6.2.2014
- *      Author: dherrera
- */
-
 #ifndef EUTILS_H_
 #define EUTILS_H_
 

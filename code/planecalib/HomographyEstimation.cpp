@@ -1,10 +1,3 @@
-/*
- * HomographyReprojectionError.cpp
- *
- *  Created on: 29.1.2014
- *      Author: Dan
- */
-
 #include "HomographyEstimation.h"
 #include <memory>
 #include <ceres/ceres.h>

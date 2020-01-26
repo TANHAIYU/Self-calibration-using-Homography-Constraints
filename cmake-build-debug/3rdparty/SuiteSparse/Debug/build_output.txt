@@ -1,0 +1,945 @@
+Scanning dependencies of target SuiteSparse
+[ 12%] Creating directories for 'SuiteSparse'
+[ 25%] No download step for 'SuiteSparse'
+[ 37%] No patch step for 'SuiteSparse'
+[ 50%] No update step for 'SuiteSparse'
+[ 62%] Performing configure step for 'SuiteSparse'
+loading initial cache file /home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/tmp/SuiteSparse-cache-.cmake
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for complex.h
+-- Looking for complex.h - found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/SuiteSparse/Debug/src/SuiteSparse-build
+[ 75%] Performing build step for 'SuiteSparse'
+Scanning dependencies of target suitesparseconfig
+[  0%] Building C object SuiteSparse/SuiteSparse_config/CMakeFiles/suitesparseconfig.dir/SuiteSparse_config.c.o
+[  0%] Linking C static library ../../lib/libsuitesparseconfigd.a
+[  0%] Built target suitesparseconfig
+Scanning dependencies of target btf
+[  0%] Building C object SuiteSparse/BTF/CMakeFiles/btf.dir/SourceWrappers/btf_l_maxtrans.o.c.o
+Scanning dependencies of target ccolamd
+[  0%] Building C object SuiteSparse/CCOLAMD/CMakeFiles/ccolamd.dir/SourceWrappers/ccolamd.c.o
+[  0%] Building C object SuiteSparse/BTF/CMakeFiles/btf.dir/SourceWrappers/btf_l_order.o.c.o
+[  0%] Building C object SuiteSparse/BTF/CMakeFiles/btf.dir/SourceWrappers/btf_l_strongcomp.o.c.o
+Scanning dependencies of target amd
+[  0%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_global.c.o
+[  0%] Building C object SuiteSparse/BTF/CMakeFiles/btf.dir/SourceWrappers/btf_maxtrans.o.c.o
+Scanning dependencies of target camd
+[  0%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_global.c.o
+[  0%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_1.o.c.o
+[  0%] Building C object SuiteSparse/CCOLAMD/CMakeFiles/ccolamd.dir/SourceWrappers/ccolamd_global.c.o
+[  0%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_1.o.c.o
+[  0%] Building C object SuiteSparse/CCOLAMD/CMakeFiles/ccolamd.dir/SourceWrappers/ccolamd_l.o.c.o
+[  0%] Building C object SuiteSparse/BTF/CMakeFiles/btf.dir/SourceWrappers/btf_order.o.c.o
+[  0%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_2.o.c.o
+[  1%] Building C object SuiteSparse/BTF/CMakeFiles/btf.dir/SourceWrappers/btf_strongcomp.o.c.o
+[  1%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_2.o.c.o
+[  1%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_aat.o.c.o
+[  1%] Linking C static library ../../lib/libbtfd.a
+[  1%] Built target btf
+[  1%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_aat.o.c.o
+[  1%] Linking C static library ../../lib/libccolamdd.a
+[  1%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_control.o.c.o
+[  1%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_control.o.c.o
+[  1%] Built target ccolamd
+[  2%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_dump.o.c.o
+[  2%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_defaults.o.c.o
+[  2%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_defaults.o.c.o
+[  2%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_dump.o.c.o
+[  2%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_info.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_info.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_order.o.c.o
+[  3%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_order.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_post_tree.o.c.o
+Scanning dependencies of target colamd
+[  3%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_postorder.o.c.o
+[  3%] Building C object SuiteSparse/COLAMD/CMakeFiles/colamd.dir/SourceWrappers/colamd.c.o
+[  3%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_preprocess.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_postorder.o.c.o
+[  3%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_i_valid.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_preprocess.o.c.o
+[  3%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_1.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_i_valid.o.c.o
+[  3%] Building C object SuiteSparse/COLAMD/CMakeFiles/colamd.dir/SourceWrappers/colamd_global.c.o
+[  3%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_2.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_1.o.c.o
+[  3%] Building C object SuiteSparse/COLAMD/CMakeFiles/colamd.dir/SourceWrappers/colamd_l.o.c.o
+[  3%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_2.o.c.o
+[  4%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_aat.o.c.o
+[  4%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_control.o.c.o
+[  4%] Linking C static library ../../lib/libcolamdd.a
+[  5%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_aat.o.c.o
+[  5%] Built target colamd
+[  5%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_control.o.c.o
+Scanning dependencies of target cxsparse
+[  5%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_add_ci.o.c.o
+[  5%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_defaults.o.c.o
+[  5%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_defaults.o.c.o
+[  5%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_dump.o.c.o
+[  5%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_add_cl.o.c.o
+[  5%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_dump.o.c.o
+[  5%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_info.o.c.o
+[  5%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_info.o.c.o
+Scanning dependencies of target ldl
+[  6%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_add_di.o.c.o
+[  6%] Building C object SuiteSparse/LDL/CMakeFiles/ldl.dir/SourceWrappers/ldl.o.c.o
+[  6%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_order.o.c.o
+[  6%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_order.o.c.o
+[  6%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_add_dl.o.c.o
+[  6%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_postorder.o.c.o
+[  6%] Building C object SuiteSparse/LDL/CMakeFiles/ldl.dir/SourceWrappers/ldll.o.c.o
+[  6%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_post_tree.o.c.o
+[  6%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_preprocess.o.c.o
+[  6%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_amd_ci.o.c.o
+[  6%] Linking C static library ../../lib/libldld.a
+[  6%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_postorder.o.c.o
+[  6%] Built target ldl
+[  7%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_preprocess.o.c.o
+[  8%] Building C object SuiteSparse/CAMD/CMakeFiles/camd.dir/SourceWrappers/camd_l_valid.o.c.o
+[  8%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_amd_cl.o.c.o
+[  8%] Building C object SuiteSparse/AMD/CMakeFiles/amd.dir/SourceWrappers/amd_l_valid.o.c.o
+[  8%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_amd_di.o.c.o
+[  8%] Linking C static library ../../lib/libcamdd.a
+[  8%] Linking C static library ../../lib/libamdd.a
+[  8%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_amd_dl.o.c.o
+[  8%] Built target camd
+[  8%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_chol_ci.o.c.o
+[  8%] Built target amd
+[  8%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_chol_cl.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_chol_di.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_chol_dl.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cholsol_ci.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cholsol_cl.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cholsol_di.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cholsol_dl.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_compress_ci.o.c.o
+[  9%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_compress_cl.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_compress_di.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_compress_dl.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_convert.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_counts_ci.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_counts_cl.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_counts_di.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_counts_dl.o.c.o
+[ 10%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cumsum_ci.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cumsum_cl.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cumsum_di.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_cumsum_dl.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dfs_ci.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dfs_cl.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dfs_di.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dfs_dl.o.c.o
+Scanning dependencies of target klu
+[ 11%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_analyze.o.c.o
+[ 11%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_analyze_given.o.c.o
+[ 11%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dmperm_ci.o.c.o
+[ 12%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d.o.c.o
+[ 12%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_diagnostics.o.c.o
+[ 13%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dmperm_cl.o.c.o
+[ 13%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_dump.o.c.o
+[ 13%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_extract.o.c.o
+[ 13%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dmperm_di.o.c.o
+[ 13%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dmperm_dl.o.c.o
+[ 13%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_factor.o.c.o
+[ 13%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_free_numeric.o.c.o
+Scanning dependencies of target cholmod
+[ 13%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_aat.o.c.o
+[ 13%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_droptol_ci.o.c.o
+[ 13%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_add.o.c.o
+[ 13%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_kernel.o.c.o
+[ 13%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_droptol_cl.o.c.o
+[ 13%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_droptol_di.o.c.o
+[ 14%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_amd.o.c.o
+[ 14%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_analyze.o.c.o
+[ 14%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_droptol_dl.o.c.o
+[ 14%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_refactor.o.c.o
+[ 15%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_scale.o.c.o
+[ 15%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dropzeros_ci.o.c.o
+[ 15%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_band.o.c.o
+[ 15%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_solve.o.c.o
+[ 15%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_sort.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dropzeros_cl.o.c.o
+[ 16%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_camd.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dropzeros_di.o.c.o
+[ 16%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_d_tsolve.o.c.o
+[ 16%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_defaults.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dropzeros_dl.o.c.o
+[ 16%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_ccolamd.o.c.o
+[ 16%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_change_factor.o.c.o
+[ 16%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_free_symbolic.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dupl_ci.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dupl_cl.o.c.o
+[ 16%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dupl_di.o.c.o
+[ 16%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_analyze.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_dupl_dl.o.c.o
+[ 16%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_entry_ci.o.c.o
+[ 17%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_analyze_given.o.c.o
+[ 17%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_check.o.c.o
+[ 17%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_defaults.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_entry_cl.o.c.o
+[ 18%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_colamd.o.c.o
+[ 18%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_diagnostics.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_entry_di.o.c.o
+[ 18%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_dump.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_entry_dl.o.c.o
+[ 18%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_extract.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ereach_ci.o.c.o
+[ 18%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_factor.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ereach_cl.o.c.o
+[ 18%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_free_numeric.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ereach_di.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ereach_dl.o.c.o
+[ 18%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_free_symbolic.o.c.o
+[ 18%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_etree_ci.o.c.o
+[ 19%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_common.o.c.o
+[ 19%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_complex.o.c.o
+[ 20%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_kernel.o.c.o
+[ 21%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_etree_cl.o.c.o
+[ 21%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_copy.o.c.o
+[ 21%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_memory.o.c.o
+[ 21%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_etree_di.o.c.o
+[ 21%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_refactor.o.c.o
+[ 21%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_scale.o.c.o
+[ 21%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_csymamd.o.c.o
+[ 21%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_etree_dl.o.c.o
+[ 21%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_dense.o.c.o
+[ 21%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_solve.o.c.o
+[ 21%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_sort.o.c.o
+[ 21%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_fkeep_ci.o.c.o
+[ 21%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_fkeep_cl.o.c.o
+[ 21%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_l_tsolve.o.c.o
+[ 21%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_fkeep_di.o.c.o
+[ 21%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_drop.o.c.o
+[ 21%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_fkeep_dl.o.c.o
+[ 22%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_gaxpy_ci.o.c.o
+[ 22%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_memory.o.c.o
+[ 22%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_error.o.c.o
+[ 23%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z.o.c.o
+[ 23%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_gaxpy_cl.o.c.o
+[ 23%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_gaxpy_di.o.c.o
+[ 23%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_etree.o.c.o
+[ 23%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_gaxpy_dl.o.c.o
+[ 23%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_diagnostics.o.c.o
+[ 24%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_factor.o.c.o
+[ 24%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_happly_ci.o.c.o
+[ 24%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_dump.o.c.o
+[ 24%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_happly_cl.o.c.o
+[ 24%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_factorize.o.c.o
+[ 24%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_happly_di.o.c.o
+[ 24%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_extract.o.c.o
+[ 24%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_horzcat.o.c.o
+[ 24%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_happly_dl.o.c.o
+[ 25%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_house_ci.o.c.o
+[ 25%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_factor.o.c.o
+[ 25%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_aat.o.c.o
+[ 25%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_house_cl.o.c.o
+[ 25%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_house_di.o.c.o
+[ 25%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_free_numeric.o.c.o
+[ 25%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_add.o.c.o
+[ 25%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_house_dl.o.c.o
+[ 25%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_amd.o.c.o
+[ 25%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_kernel.o.c.o
+[ 25%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ipvec_ci.o.c.o
+[ 25%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ipvec_cl.o.c.o
+[ 25%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_analyze.o.c.o
+[ 25%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_band.o.c.o
+[ 25%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ipvec_di.o.c.o
+[ 25%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_refactor.o.c.o
+[ 26%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_scale.o.c.o
+[ 26%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ipvec_dl.o.c.o
+[ 27%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_camd.o.c.o
+[ 27%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_solve.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_leaf_ci.o.c.o
+[ 28%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_sort.o.c.o
+[ 28%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_ccolamd.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_leaf_cl.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_leaf_di.o.c.o
+[ 28%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_z_tsolve.o.c.o
+[ 28%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_change_factor.o.c.o
+[ 28%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_check.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_leaf_dl.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_load_ci.o.c.o
+[ 28%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_load_cl.o.c.o
+[ 28%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_colamd.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_load_di.o.c.o
+[ 28%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_common.o.c.o
+[ 28%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_load_dl.o.c.o
+[ 28%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_complex.o.c.o
+[ 28%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_diagnostics.o.c.o
+[ 28%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_dump.o.c.o
+[ 29%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lsolve_ci.o.c.o
+[ 29%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_copy.o.c.o
+[ 29%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lsolve_cl.o.c.o
+[ 30%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_csymamd.o.c.o
+[ 30%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_extract.o.c.o
+[ 30%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_dense.o.c.o
+[ 30%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lsolve_di.o.c.o
+[ 31%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_factor.o.c.o
+[ 31%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_free_numeric.o.c.o
+[ 31%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lsolve_dl.o.c.o
+[ 31%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ltsolve_ci.o.c.o
+[ 31%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_kernel.o.c.o
+[ 31%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_refactor.o.c.o
+[ 31%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_drop.o.c.o
+[ 31%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ltsolve_cl.o.c.o
+[ 31%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_error.o.c.o
+[ 31%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_scale.o.c.o
+[ 31%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_solve.o.c.o
+[ 31%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ltsolve_di.o.c.o
+[ 31%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_etree.o.c.o
+[ 31%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_factor.o.c.o
+[ 31%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_ltsolve_dl.o.c.o
+[ 31%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_factorize.o.c.o
+[ 31%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_sort.o.c.o
+[ 31%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_horzcat.o.c.o
+[ 32%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lu_ci.o.c.o
+[ 32%] Building C object SuiteSparse/KLU/CMakeFiles/klu.dir/SourceWrappers/klu_zl_tsolve.o.c.o
+[ 33%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_memory.o.c.o
+[ 33%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_metis.o.c.o
+[ 33%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lu_cl.o.c.o
+[ 33%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_nesdis.o.c.o
+[ 33%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_norm.o.c.o
+[ 33%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_postorder.o.c.o
+[ 33%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lu_di.o.c.o
+[ 34%] Linking C static library ../../lib/libklud.a
+[ 34%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_rcond.o.c.o
+[ 34%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_read.o.c.o
+[ 34%] Built target klu
+[ 34%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lu_dl.o.c.o
+[ 34%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lusol_ci.o.c.o
+[ 34%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_resymbol.o.c.o
+[ 35%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_rowadd.o.c.o
+[ 35%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lusol_cl.o.c.o
+[ 35%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lusol_di.o.c.o
+[ 35%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_lusol_dl.o.c.o
+[ 35%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_rowcolcounts.o.c.o
+[ 35%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_rowdel.o.c.o
+[ 35%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_rowfac.o.c.o
+[ 36%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_malloc_ci.o.c.o
+[ 36%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_malloc_cl.o.c.o
+[ 36%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_malloc_di.o.c.o
+[ 36%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_scale.o.c.o
+[ 36%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_malloc_dl.o.c.o
+[ 36%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_sdmult.o.c.o
+[ 36%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_maxtrans_ci.o.c.o
+[ 36%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_maxtrans_cl.o.c.o
+[ 36%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_solve.o.c.o
+[ 37%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_sparse.o.c.o
+[ 37%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_maxtrans_di.o.c.o
+[ 37%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_spsolve.o.c.o
+[ 37%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_maxtrans_dl.o.c.o
+[ 37%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_ssmult.o.c.o
+[ 37%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_submatrix.o.c.o
+[ 38%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_multiply_ci.o.c.o
+[ 38%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_super_numeric.o.c.o
+[ 38%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_super_solve.o.c.o
+[ 38%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_multiply_cl.o.c.o
+[ 38%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_multiply_di.o.c.o
+[ 38%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_multiply_dl.o.c.o
+[ 38%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_super_symbolic.o.c.o
+[ 38%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_norm_ci.o.c.o
+[ 38%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_norm_cl.o.c.o
+[ 38%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_symmetry.o.c.o
+[ 39%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_transpose.o.c.o
+[ 39%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_norm_di.o.c.o
+[ 39%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_norm_dl.o.c.o
+[ 39%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_triplet.o.c.o
+[ 39%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_updown.o.c.o
+[ 40%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_permute_ci.o.c.o
+[ 40%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_permute_cl.o.c.o
+[ 40%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_permute_di.o.c.o
+[ 40%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_vertcat.o.c.o
+[ 40%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_l_write.o.c.o
+[ 40%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_permute_dl.o.c.o
+[ 40%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pinv_ci.o.c.o
+[ 40%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_memory.o.c.o
+[ 40%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pinv_cl.o.c.o
+[ 40%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_metis.o.c.o
+[ 40%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_nesdis.o.c.o
+[ 41%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_norm.o.c.o
+[ 41%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pinv_di.o.c.o
+[ 41%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pinv_dl.o.c.o
+[ 41%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_postorder.o.c.o
+[ 42%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_post_ci.o.c.o
+[ 42%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_rcond.o.c.o
+[ 42%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_read.o.c.o
+[ 42%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_post_cl.o.c.o
+[ 42%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_resymbol.o.c.o
+[ 42%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_post_di.o.c.o
+[ 42%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_post_dl.o.c.o
+[ 42%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_rowadd.o.c.o
+[ 42%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_rowcolcounts.o.c.o
+[ 42%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_print_ci.o.c.o
+[ 42%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_print_cl.o.c.o
+[ 42%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_rowdel.o.c.o
+[ 43%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_rowfac.o.c.o
+[ 43%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_print_di.o.c.o
+[ 43%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_print_dl.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pvec_ci.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pvec_cl.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pvec_di.o.c.o
+[ 44%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_scale.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_pvec_dl.o.c.o
+[ 44%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_sdmult.o.c.o
+[ 44%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_solve.o.c.o
+[ 44%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_sparse.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qr_ci.o.c.o
+[ 44%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_spsolve.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qr_cl.o.c.o
+[ 44%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_ssmult.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qr_di.o.c.o
+[ 44%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qr_dl.o.c.o
+[ 44%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_submatrix.o.c.o
+[ 45%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qrsol_ci.o.c.o
+[ 45%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qrsol_cl.o.c.o
+[ 46%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_super_numeric.o.c.o
+[ 46%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_super_solve.o.c.o
+[ 46%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qrsol_di.o.c.o
+[ 46%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_qrsol_dl.o.c.o
+[ 46%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_super_symbolic.o.c.o
+[ 46%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_symmetry.o.c.o
+[ 46%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_randperm_ci.o.c.o
+[ 46%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_transpose.o.c.o
+[ 46%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_randperm_cl.o.c.o
+[ 46%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_randperm_di.o.c.o
+[ 46%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_triplet.o.c.o
+[ 47%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_randperm_dl.o.c.o
+[ 47%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_reach_ci.o.c.o
+[ 47%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_reach_cl.o.c.o
+[ 47%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_updown.o.c.o
+[ 47%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_vertcat.o.c.o
+[ 47%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_reach_di.o.c.o
+[ 48%] Building C object SuiteSparse/CHOLMOD/CMakeFiles/cholmod.dir/SourceWrappers/cholmod_write.o.c.o
+[ 48%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_reach_dl.o.c.o
+[ 48%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scatter_ci.o.c.o
+[ 48%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scatter_cl.o.c.o
+[ 48%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scatter_di.o.c.o
+[ 48%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scatter_dl.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scc_ci.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scc_di.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scc_cl.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_scc_dl.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_schol_ci.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_schol_cl.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_schol_di.o.c.o
+[ 49%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_schol_dl.o.c.o
+[ 50%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_spsolve_ci.o.c.o
+[ 50%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_spsolve_cl.o.c.o
+[ 50%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_spsolve_di.o.c.o
+[ 50%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_spsolve_dl.o.c.o
+[ 50%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_sqr_ci.o.c.o
+[ 50%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_sqr_cl.o.c.o
+[ 50%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_sqr_di.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_sqr_dl.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_symperm_ci.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_symperm_cl.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_symperm_di.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_symperm_dl.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_tdfs_ci.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_tdfs_cl.o.c.o
+[ 51%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_tdfs_di.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_tdfs_dl.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_transpose_ci.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_transpose_cl.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_transpose_di.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_transpose_dl.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_updown_ci.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_updown_cl.o.c.o
+[ 52%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_updown_di.o.c.o
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_updown_dl.o.c.o
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_usolve_ci.o.c.o
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_usolve_cl.o.c.o
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_usolve_di.o.c.o
+[ 53%] Linking C static library ../../lib/libcholmodd.a
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_usolve_dl.o.c.o
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_util_ci.o.c.o
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_util_cl.o.c.o
+[ 53%] Built target cholmod
+[ 53%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_util_di.o.c.o
+[ 54%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_util_dl.o.c.o
+[ 54%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_utsolve_ci.o.c.o
+[ 54%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_utsolve_cl.o.c.o
+[ 54%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_utsolve_di.o.c.o
+[ 54%] Building C object SuiteSparse/CXSparse/CMakeFiles/cxsparse.dir/SourceWrappers/cs_utsolve_dl.o.c.o
+[ 54%] Linking C static library ../../lib/libcxsparsed.a
+[ 54%] Built target cxsparse
+Scanning dependencies of target spqr
+[ 54%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_rmap.cpp.o
+[ 54%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/SuiteSparseQR_C.cpp.o
+[ 54%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/SuiteSparseQR_expert.cpp.o
+[ 54%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_parallel.cpp.o
+[ 55%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_kernel.cpp.o
+[ 55%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_analyze.cpp.o
+Scanning dependencies of target umfpack
+[ 55%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_assemble.cpp.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_assemble.o.c.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_assemble_fixq.o.c.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_blas3_update.o.c.o
+[ 56%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_cpack.cpp.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_build_tuples.o.c.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_create_element.o.c.o
+[ 56%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_csize.cpp.o
+[ 56%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_fcsize.cpp.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_dump.o.c.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_extend_front.o.c.o
+[ 56%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_garbage_collection.o.c.o
+[ 57%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_get_memory.o.c.o
+[ 57%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_grow_front.o.c.o
+[ 57%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_init_front.o.c.o
+[ 57%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_debug.cpp.o
+[ 57%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_kernel.o.c.o
+[ 57%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_front.cpp.o
+[ 57%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_kernel_init.o.c.o
+[ 58%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_factorize.cpp.o
+[ 58%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_kernel_wrapup.o.c.o
+[ 58%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_lhsolve.o.c.o
+[ 58%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_local_search.o.c.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_lsolve.o.c.o
+[ 59%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_freenum.cpp.o
+[ 59%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_freesym.cpp.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_ltsolve.o.c.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_mem_alloc_element.o.c.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_mem_alloc_head_block.o.c.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_mem_alloc_tail_block.o.c.o
+[ 59%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_freefac.cpp.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_mem_free_tail_block.o.c.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_mem_init_memoryspace.o.c.o
+[ 59%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_report_vector.o.c.o
+[ 60%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_row_search.o.c.o
+[ 60%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_fsize.cpp.o
+[ 60%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_maxcolnorm.cpp.o
+[ 60%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_scale.o.c.o
+[ 60%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_scale_column.o.c.o
+[ 60%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_set_stats.o.c.o
+[ 60%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_solve.o.c.o
+[ 60%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_rconvert.cpp.o
+[ 60%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_start_front.o.c.o
+[ 60%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_store_lu.o.c.o
+[ 60%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_rcount.cpp.o
+[ 61%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_rhpack.cpp.o
+[ 61%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_store_lu_drop.o.c.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_symbolic_usage.o.c.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_transpose.o.c.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_triplet_map_nox.o.c.o
+[ 62%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_rsolve.cpp.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_triplet_map_x.o.c.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_triplet_nomap_nox.o.c.o
+[ 62%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_stranspose1.cpp.o
+[ 62%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_stranspose2.cpp.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_triplet_nomap_x.o.c.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_tuple_lengths.o.c.o
+[ 62%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_uhsolve.o.c.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_usolve.o.c.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_utsolve.o.c.o
+[ 63%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_hpinv.cpp.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_valid_numeric.o.c.o
+[ 63%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_1fixed.cpp.o
+[ 63%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_1colamd.cpp.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_di_valid_symbolic.o.c.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_assemble.o.c.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_assemble_fixq.o.c.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_blas3_update.o.c.o
+[ 63%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_build_tuples.o.c.o
+[ 64%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/SuiteSparseQR.cpp.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_create_element.o.c.o
+[ 65%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_1factor.cpp.o
+[ 65%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_cumsum.cpp.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_dump.o.c.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_extend_front.o.c.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_garbage_collection.o.c.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_get_memory.o.c.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_grow_front.o.c.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_init_front.o.c.o
+[ 65%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_kernel.o.c.o
+[ 65%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_shift.cpp.o
+[ 65%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_happly.cpp.o
+[ 65%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_panel.cpp.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_kernel_init.o.c.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_kernel_wrapup.o.c.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_lhsolve.o.c.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_local_search.o.c.o
+[ 66%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_happly_work.cpp.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_lsolve.o.c.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_ltsolve.o.c.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_mem_alloc_element.o.c.o
+[ 66%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/SuiteSparseQR_qmult.cpp.o
+[ 66%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_mem_alloc_head_block.o.c.o
+[ 67%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_trapezoidal.cpp.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_mem_alloc_tail_block.o.c.o
+[ 68%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_larftb.cpp.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_mem_free_tail_block.o.c.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_mem_init_memoryspace.o.c.o
+[ 68%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_append.cpp.o
+[ 68%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_type.cpp.o
+[ 68%] Building CXX object SuiteSparse/SPQR/CMakeFiles/spqr.dir/Source/spqr_tol.cpp.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_report_vector.o.c.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_row_search.o.c.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_scale.o.c.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_scale_column.o.c.o
+[ 68%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_set_stats.o.c.o
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_solve.o.c.o
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_start_front.o.c.o
+[ 69%] Linking CXX static library ../../lib/libspqrd.a
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_store_lu.o.c.o
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_store_lu_drop.o.c.o
+[ 69%] Built target spqr
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_symbolic_usage.o.c.o
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_transpose.o.c.o
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_triplet_map_nox.o.c.o
+[ 69%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_triplet_map_x.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_triplet_nomap_nox.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_triplet_nomap_x.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_tuple_lengths.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_uhsolve.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_usolve.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_utsolve.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_valid_numeric.o.c.o
+[ 70%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_dl_valid_symbolic.o.c.o
+[ 71%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_analyze.o.c.o
+[ 71%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_apply_order.o.c.o
+[ 71%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_cholmod.o.c.o
+[ 71%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_colamd.o.c.o
+[ 71%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_free.o.c.o
+[ 71%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_fsize.o.c.o
+[ 71%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_is_permutation.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_malloc.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_realloc.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_report_perm.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_i_singletons.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_analyze.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_apply_order.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_cholmod.o.c.o
+[ 72%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_colamd.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_free.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_fsize.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_is_permutation.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_malloc.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_realloc.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_report_perm.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_l_singletons.o.c.o
+[ 73%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_assemble.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_assemble_fixq.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_blas3_update.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_build_tuples.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_create_element.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_dump.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_extend_front.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_garbage_collection.o.c.o
+[ 74%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_get_memory.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_grow_front.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_init_front.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_kernel.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_kernel_init.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_kernel_wrapup.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_lhsolve.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_local_search.o.c.o
+[ 75%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_lsolve.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_ltsolve.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_mem_alloc_element.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_mem_alloc_tail_block.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_mem_alloc_head_block.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_mem_free_tail_block.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_mem_init_memoryspace.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_report_vector.o.c.o
+[ 76%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_row_search.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_scale.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_scale_column.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_set_stats.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_solve.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_start_front.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_store_lu.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_store_lu_drop.o.c.o
+[ 77%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_symbolic_usage.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_transpose.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_triplet_map_nox.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_triplet_map_x.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_triplet_nomap_nox.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_triplet_nomap_x.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_tuple_lengths.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_uhsolve.o.c.o
+[ 78%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_usolve.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_utsolve.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_valid_numeric.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zi_valid_symbolic.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_assemble.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_assemble_fixq.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_blas3_update.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_build_tuples.o.c.o
+[ 79%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_create_element.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_dump.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_extend_front.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_garbage_collection.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_get_memory.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_grow_front.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_init_front.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_kernel.o.c.o
+[ 80%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_kernel_init.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_kernel_wrapup.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_lhsolve.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_local_search.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_lsolve.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_ltsolve.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_mem_alloc_element.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_mem_alloc_head_block.o.c.o
+[ 81%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_mem_alloc_tail_block.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_mem_free_tail_block.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_mem_init_memoryspace.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_report_vector.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_row_search.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_scale.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_scale_column.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_set_stats.o.c.o
+[ 82%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_solve.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_start_front.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_store_lu.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_store_lu_drop.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_symbolic_usage.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_transpose.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_triplet_map_nox.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_triplet_map_x.o.c.o
+[ 83%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_triplet_nomap_nox.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_triplet_nomap_x.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_tuple_lengths.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_uhsolve.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_usolve.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_utsolve.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_valid_numeric.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umf_zl_valid_symbolic.o.c.o
+[ 84%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_col_to_triplet.o.c.o
+[ 85%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_defaults.o.c.o
+[ 85%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_free_numeric.o.c.o
+[ 85%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_free_symbolic.o.c.o
+[ 85%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_get_determinant.o.c.o
+[ 85%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_get_lunz.o.c.o
+[ 85%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_get_numeric.o.c.o
+[ 85%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_get_symbolic.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_load_numeric.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_load_symbolic.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_numeric.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_qsymbolic.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_info.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_control.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_matrix.o.c.o
+[ 86%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_numeric.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_perm.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_status.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_symbolic.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_triplet.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_report_vector.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_save_numeric.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_save_symbolic.o.c.o
+[ 87%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_scale.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_solve.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_symbolic.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_transpose.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_triplet_to_col.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_di_wsolve.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_col_to_triplet.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_defaults.o.c.o
+[ 88%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_free_numeric.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_free_symbolic.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_get_determinant.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_get_lunz.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_get_numeric.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_get_symbolic.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_load_numeric.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_load_symbolic.o.c.o
+[ 89%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_numeric.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_qsymbolic.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_control.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_info.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_matrix.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_numeric.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_perm.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_status.o.c.o
+[ 90%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_symbolic.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_triplet.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_report_vector.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_save_numeric.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_save_symbolic.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_scale.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_solve.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_symbolic.o.c.o
+[ 91%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_transpose.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_triplet_to_col.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_dl_wsolve.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_gn_global.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_gn_tictoc.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_gn_timer.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_col_to_triplet.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_defaults.o.c.o
+[ 92%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_free_numeric.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_free_symbolic.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_get_determinant.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_get_lunz.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_get_numeric.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_get_symbolic.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_load_numeric.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_load_symbolic.o.c.o
+[ 93%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_numeric.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_qsymbolic.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_control.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_info.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_matrix.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_numeric.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_perm.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_status.o.c.o
+[ 94%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_symbolic.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_triplet.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_report_vector.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_save_numeric.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_save_symbolic.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_scale.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_solve.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_symbolic.o.c.o
+[ 95%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_transpose.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_triplet_to_col.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zi_wsolve.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_col_to_triplet.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_defaults.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_free_numeric.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_free_symbolic.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_get_determinant.o.c.o
+[ 96%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_get_lunz.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_get_numeric.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_get_symbolic.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_load_numeric.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_load_symbolic.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_numeric.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_qsymbolic.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_control.o.c.o
+[ 97%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_info.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_matrix.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_numeric.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_perm.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_status.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_symbolic.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_triplet.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_report_vector.o.c.o
+[ 98%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_save_numeric.o.c.o
+[ 99%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_save_symbolic.o.c.o
+[ 99%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_scale.o.c.o
+[ 99%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_solve.o.c.o
+[ 99%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_symbolic.o.c.o
+[ 99%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_transpose.o.c.o
+[ 99%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_wsolve.o.c.o
+[ 99%] Building C object SuiteSparse/UMFPACK/CMakeFiles/umfpack.dir/SourceWrappers/umfpack_zl_triplet_to_col.o.c.o
+[100%] Linking C static library ../../lib/libumfpackd.a
+[100%] Built target umfpack
+[ 87%] Performing install step for 'SuiteSparse'
+[  0%] Built target suitesparseconfig
+[  3%] Built target camd
+[  4%] Built target btf
+[  7%] Built target amd
+[  7%] Built target ccolamd
+[  7%] Built target colamd
+[  7%] Built target ldl
+[ 15%] Built target klu
+[ 41%] Built target cxsparse
+[ 54%] Built target cholmod
+[ 59%] Built target spqr
+[100%] Built target umfpack
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/./SuiteSparseConfig.cmake
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/./UseSuiteSparse64.cmake
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/cmake/SuiteSparse-config64.cmake
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/cmake/SuiteSparse-config64-debug.cmake
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libsuitesparseconfigd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/SuiteSparse_config.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libamdd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/amd.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/amd_internal.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libbtfd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/btf.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/btf_internal.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libcamdd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/camd.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/camd_internal.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libccolamdd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/ccolamd.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libcolamdd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/colamd.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libcholmodd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_blas.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_camd.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_check.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_cholesky.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_complexity.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_config.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_core.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_gpu.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_gpu_kernels.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_internal.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_io64.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_matrixops.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_modify.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_partition.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_supernodal.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cholmod_template.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libcxsparsed.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/cs.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libklud.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/klu.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/klu_internal.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/klu_version.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libldld.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/ldl.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libumfpackd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_col_to_triplet.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_defaults.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_free_numeric.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_free_symbolic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_get_determinant.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_get_lunz.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_get_numeric.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_get_symbolic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_global.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_load_numeric.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_load_symbolic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_numeric.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_qsymbolic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_control.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_info.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_matrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_numeric.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_perm.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_status.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_symbolic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_triplet.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_report_vector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_save_numeric.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_save_symbolic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_scale.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_solve.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_symbolic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_tictoc.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_timer.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_transpose.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_triplet_to_col.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/umfpack_wsolve.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib64/libspqrd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/SuiteSparseQR.hpp
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/SuiteSparseQR_C.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/SuiteSparseQR_definitions.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse/spqr.hpp
+[100%] Completed 'SuiteSparse'
+[100%] Built target SuiteSparse

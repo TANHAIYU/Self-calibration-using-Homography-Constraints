@@ -1,0 +1,6 @@
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/libglewd.a
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/wglew.h
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/glxew.h
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/glew.h
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/glew/glew-config.cmake
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/glew/glew-config-debug.cmake

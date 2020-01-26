@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libldld.a  CMakeFiles/ldl.dir/SourceWrappers/ldl.o.c.o CMakeFiles/ldl.dir/SourceWrappers/ldll.o.c.o
+/usr/bin/ranlib ../../lib/libldld.a

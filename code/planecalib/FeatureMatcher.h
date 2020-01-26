@@ -1,10 +1,3 @@
-/*
- * featurematcher.h
- *
- *  created on: 9.2.2014
- *      author: dan
- */
-
 #ifndef FEATUREMATCHER_H
 #define FEATUREMATCHER_H
 

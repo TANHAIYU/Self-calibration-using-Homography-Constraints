@@ -1,10 +1,3 @@
-/*
- * UserInterfaceInfo.h
- *
- *  Created on: 3.2.2014
- *      Author: dan
- */
-
 #ifndef USERINTERFACEINFO_H_
 #define USERINTERFACEINFO_H_
 

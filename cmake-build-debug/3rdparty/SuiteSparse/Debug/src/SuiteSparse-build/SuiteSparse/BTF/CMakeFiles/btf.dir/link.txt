@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libbtfd.a  CMakeFiles/btf.dir/SourceWrappers/btf_l_maxtrans.o.c.o CMakeFiles/btf.dir/SourceWrappers/btf_l_order.o.c.o CMakeFiles/btf.dir/SourceWrappers/btf_l_strongcomp.o.c.o CMakeFiles/btf.dir/SourceWrappers/btf_maxtrans.o.c.o CMakeFiles/btf.dir/SourceWrappers/btf_order.o.c.o CMakeFiles/btf.dir/SourceWrappers/btf_strongcomp.o.c.o
+/usr/bin/ranlib ../../lib/libbtfd.a

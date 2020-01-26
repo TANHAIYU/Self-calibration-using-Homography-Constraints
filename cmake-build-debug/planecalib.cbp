@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="planecalib"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\3rdparty\;CMake Files\cmake-build-debug\3rdparty\usr\;CMake Files\cmake-build-debug\3rdparty\usr\lib\;CMake Files\cmake-build-debug\3rdparty\usr\lib\glew\;CMake Files\cmake-build-debug\3rdparty\usr\lib\freeglut\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\lib\;CMake Files\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\usr\local\lib\cmake\opencv4\;CMake Files\..\..\..\usr\local\lib\cmake\glog\;CMake Files\..\..\..\usr\local\lib\cmake\Ceres\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\;CMake Files\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\usr\lib\cmake\eigen3\;CMake Files\3rdparty\;CMake Files\3rdparty\cmake\;CMake Files\code\;CMake Files\code\planecalib\;CMake Files\code\planecalib_ui\;CMake Files\code\planecalib_desktop\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="planecalib">
+				<Option output="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/libplanecalib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_NO_ABBREVIATED_SEVERITIES=1"/>
+					<Add option="-D_USE_MATH_DEFINES=1"/>
+					<Add option="-DGFLAGS_IS_A_DLL=0"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 planecalib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="planecalib/fast">
+				<Option output="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/libplanecalib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_NO_ABBREVIATED_SEVERITIES=1"/>
+					<Add option="-D_USE_MATH_DEFINES=1"/>
+					<Add option="-DGFLAGS_IS_A_DLL=0"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 planecalib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="planecalib_ui">
+				<Option output="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/libplanecalib_ui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_NO_ABBREVIATED_SEVERITIES=1"/>
+					<Add option="-D_USE_MATH_DEFINES=1"/>
+					<Add option="-DGFLAGS_IS_A_DLL=0"/>
+					<Add option="-DGLEW_STATIC=1"/>
+					<Add directory="/home/haiyutan/planecalib/code/planecalib/.."/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 planecalib_ui"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="planecalib_ui/fast">
+				<Option output="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/libplanecalib_ui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_NO_ABBREVIATED_SEVERITIES=1"/>
+					<Add option="-D_USE_MATH_DEFINES=1"/>
+					<Add option="-DGFLAGS_IS_A_DLL=0"/>
+					<Add option="-DGLEW_STATIC=1"/>
+					<Add directory="/home/haiyutan/planecalib/code/planecalib/.."/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 planecalib_ui/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_ui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="planecalib_desktop">
+				<Option output="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/planecalib_desktop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_NO_ABBREVIATED_SEVERITIES=1"/>
+					<Add option="-D_USE_MATH_DEFINES=1"/>
+					<Add option="-DGFLAGS_IS_A_DLL=0"/>
+					<Add option="-DGLEW_STATIC=1"/>
+					<Add directory="/home/haiyutan/planecalib/code/planecalib_ui/.."/>
+					<Add directory="/home/haiyutan/planecalib/code/planecalib/.."/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 planecalib_desktop"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="planecalib_desktop/fast">
+				<Option output="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/planecalib_desktop" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLOG_NO_ABBREVIATED_SEVERITIES=1"/>
+					<Add option="-D_USE_MATH_DEFINES=1"/>
+					<Add option="-DGFLAGS_IS_A_DLL=0"/>
+					<Add option="-DGLEW_STATIC=1"/>
+					<Add directory="/home/haiyutan/planecalib/code/planecalib_ui/.."/>
+					<Add directory="/home/haiyutan/planecalib/code/planecalib/.."/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/code/planecalib"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 planecalib_desktop/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/haiyutan/planecalib/cmake-build-debug/code/planecalib_desktop/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/BaseRansac.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/BundleAdjuster.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/BundleAdjuster.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CalibratedBundleAdjuster.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CalibratedBundleAdjuster.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CameraDistortionModel.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CameraDistortionModel.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CameraModel.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CameraModel.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CameraModelCeres.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CeresParametrization.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CeresParametrization.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CeresUtils.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/FeatureIndexer.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/FeatureMatcher.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/FeatureMatcher.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/HomographyCalibration.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/HomographyCalibration.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/HomographyEstimation.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/HomographyEstimation.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/ImagePyramid.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/ImagePyramid.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/Keyframe.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/Keyframe.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/Map.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/Map.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/PlaneCalibSystem.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/PlaneCalibSystem.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/PnpEstimation.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/PnpEstimation.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/PoseEstimationCommon.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/PoseTracker.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/PoseTracker.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/Profiler.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/Profiler.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/ReprojectionError3D.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/ReprojectionError3D.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/ReprojectionError3DImpl.hpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/cvutils.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/cvutils.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/eutils.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/eutils.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/flags.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/log.cpp">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/log.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/shared_mutex.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/stdutils.h">
+			<Option target="planecalib"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_desktop/main.cpp">
+			<Option target="planecalib_desktop"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/Application.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/ImageDataSource.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/ImageDataSource.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/OpenCVDataSource.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/OpenCVDataSource.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/PlaneCalibApp.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/PlaneCalibApp.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/SequenceDataSource.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/SequenceDataSource.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/TextureHelper.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/TextureHelper.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/UserInterfaceInfo.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/UserInterfaceInfo.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/ViewportTiler.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/ViewportTiler.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/WarpPosColorShader.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/WarpPosColorShader.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/colorCameraDivision_render.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/colorCameraDivision_render.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/colorCameraRadial_render.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/colorCameraRadial_render.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/color_render.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/color_render.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/color_render4.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/color_render4.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/diffuse_render.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/diffuse_render.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/rect.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/rect.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/text_render.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/text_render.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_render.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_render.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_render_external_oes.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_render_fixed_alpha.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_render_fixed_alpha_external_oes.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_warp.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_warp.vert">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_warp_fixed_alpha.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/assets/texture_warp_fixed_color.frag">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/dummy.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/flags.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/ColorCameraDivisionShader.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/ColorCameraDivisionShader.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/ColorShader.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/ColorShader.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/ShaderProgram.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/ShaderProgram.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/Shaders.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/Shaders.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/StaticColors.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/StaticColors.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextRenderer.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextRenderer.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextShader.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextShader.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextureShader.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextureShader.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextureWarpShader.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/TextureWarpShader.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/WarpPosShader.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/shaders/WarpPosShader.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/tests/BouguetInterface.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/tests/BouguetInterface.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/tests/SceneGenerator.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/tests/SceneGenerator.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/ARWindow.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/ARWindow.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/BaseWindow.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/BaseWindow.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/MainWindow.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/MainWindow.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/MapWindow.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/MapWindow.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/TestWindow.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/TestWindow.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/WindowUtils.cpp">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/windows/WindowUtils.h">
+			<Option target="planecalib_ui"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/SuiteSparseConfig.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\3rdparty\usr\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/glew/glew-config-debug.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\3rdparty\usr\lib\glew\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/glew/glew-config.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\3rdparty\usr\lib\glew\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/freeglut/freeglut-config-debug.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\3rdparty\usr\lib\freeglut\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/freeglut/freeglut-config.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\3rdparty\usr\lib\freeglut\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\opencv4\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/glog/glog-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/glog/glog-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/glog/glog-modules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/glog/glog-targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/glog/glog-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\glog\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/Ceres/CeresConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/Ceres/CeresConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/Ceres/CeresTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/Ceres/CeresTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/Ceres/FindEigen.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/Ceres/FindGflags.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/local/lib/cmake/Ceres/FindGlog.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\Ceres\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\gflags\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/lib/cmake/eigen3/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/../../../usr/lib/cmake/eigen3/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/3rdparty/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\3rdparty\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/3rdparty/cmake/config_external_project.cmake">
+			<Option virtualFolder="CMake Files\3rdparty\cmake\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\code\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/echo_target.cmake">
+			<Option virtualFolder="CMake Files\code\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\code\planecalib\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib/ProjectConfig.h.in">
+			<Option virtualFolder="CMake Files\code\planecalib\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_ui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\code\planecalib_ui\"/>
+		</Unit>
+		<Unit filename="/home/haiyutan/planecalib/code/planecalib_desktop/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\code\planecalib_desktop\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,4 @@
+CMake Warning at blas/CMakeLists.txt:32 (message):
+   No fortran compiler has been detected, the blas build will be incomplete.
+
+

@@ -1,10 +1,3 @@
-/*
- * TextureHelper.cpp
- *
- *  Created on: Feb 15, 2013
- *      Author: danielh
- */
-
 #include "TextureHelper.h"
 #include <cassert>
 #include <opencv2/imgproc/imgproc.hpp>

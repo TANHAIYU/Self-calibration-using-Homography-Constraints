@@ -1,10 +1,3 @@
-/*
- * SlamKeyFrame.h
- *
- *  Created on: 8.2.2014
- *      Author: dan
- */
-
 #ifndef KEYFRAME_H_
 #define KEYFRAME_H_
 

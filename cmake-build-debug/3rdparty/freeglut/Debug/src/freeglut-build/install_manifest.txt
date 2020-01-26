@@ -1,0 +1,7 @@
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/libfreeglut_staticd.a
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/freeglut_ext.h
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/freeglut_std.h
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/glut.h
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/freeglut.h
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/freeglut/freeglut-config.cmake
+/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/freeglut/freeglut-config-debug.cmake

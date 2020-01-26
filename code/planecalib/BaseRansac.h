@@ -170,4 +170,4 @@ void BaseRansac<TModel, TIterationData, KMinConstraintCount>::ransacIteration()
 }
 
 }
-#endif /* BASERANSAC_H_ */
+#endif

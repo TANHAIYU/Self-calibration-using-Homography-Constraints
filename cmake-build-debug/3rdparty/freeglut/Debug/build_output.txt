@@ -1,0 +1,77 @@
+Scanning dependencies of target freeglut
+[ 12%] Creating directories for 'freeglut'
+[ 25%] No download step for 'freeglut'
+[ 37%] No patch step for 'freeglut'
+[ 50%] No update step for 'freeglut'
+[ 62%] Performing configure step for 'freeglut'
+loading initial cache file /home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/tmp/freeglut-cache-.cmake
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for include file sys/ioctl.h
+-- Looking for include file sys/ioctl.h - found
+-- Looking for include file fcntl.h
+-- Looking for include file fcntl.h - found
+-- Looking for include file errno.h
+-- Looking for include file errno.h - found
+-- Looking for include file usbhid.h
+-- Looking for include file usbhid.h - not found
+-- Looking for include file sys/param.h
+-- Looking for include file sys/param.h - found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/freeglut/Debug/src/freeglut-build
+[ 75%] Performing build step for 'freeglut'
+Scanning dependencies of target freeglut
+[  3%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_ext.c.o
+[  7%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_callbacks.c.o
+[ 11%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_display.c.o
+[ 15%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_cursor.c.o
+[ 19%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_font.c.o
+[ 23%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_gamemode.c.o
+[ 26%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_font_data.c.o
+[ 30%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_geometry.c.o
+[ 34%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_glutfont_definitions.c.o
+[ 38%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_init.c.o
+[ 42%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_input_devices.c.o
+[ 46%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_joystick.c.o
+[ 50%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_main.c.o
+[ 53%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_menu.c.o
+[ 57%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_misc.c.o
+[ 61%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_overlay.c.o
+[ 65%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_spaceball.c.o
+[ 69%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_state.c.o
+[ 73%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_stroke_mono_roman.c.o
+[ 76%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_stroke_roman.c.o
+[ 80%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_videoresize.c.o
+[ 84%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_structure.c.o
+[ 88%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_teapot.c.o
+[ 92%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_window.c.o
+[ 96%] Building C object CMakeFiles/freeglut.dir/home/haiyutan/planecalib/3rdparty/freeglut-2.8.1/src/freeglut_xinput.c.o
+[100%] Linking C static library libfreeglut_staticd.a
+[100%] Built target freeglut
+[ 87%] Performing install step for 'freeglut'
+[100%] Built target freeglut
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/libfreeglut_staticd.a
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/freeglut_ext.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/freeglut_std.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/glut.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/GL/freeglut.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/freeglut/freeglut-config.cmake
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib/freeglut/freeglut-config-debug.cmake
+[100%] Completed 'freeglut'
+[100%] Built target freeglut

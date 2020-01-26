@@ -1,0 +1,2 @@
+/usr/bin/ar qc libglewd.a  CMakeFiles/glew.dir/home/haiyutan/planecalib/3rdparty/glew-1.11.0/src/glew.o
+/usr/bin/ranlib libglewd.a

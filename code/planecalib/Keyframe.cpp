@@ -1,10 +1,3 @@
-/*
- * SlamKeyFrame.cpp
- *
- *  Created on: 8.2.2014
- *      Author: dan
- */
-
 #include "Keyframe.h"
 
 #include <opencv2/imgproc.hpp>

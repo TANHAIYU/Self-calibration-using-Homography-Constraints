@@ -1,10 +1,3 @@
-/*
- * SequenceDataSource.cpp
- *
- *  Created on: 22.3.2014
- *      Author: dan
- */
-
 #include "SequenceDataSource.h"
 #include <opencv2/imgproc.hpp>
 #include "planecalib/Profiler.h"

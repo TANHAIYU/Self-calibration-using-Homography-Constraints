@@ -1,0 +1,6 @@
+Name: Eigen3
+Description: A C++ template library for linear algebra: vectors, matrices, and related algorithms
+Requires:
+Version: 3.2.2
+Libs:
+Cflags: -I/home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3

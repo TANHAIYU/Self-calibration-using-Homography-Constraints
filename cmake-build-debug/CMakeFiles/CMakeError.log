@@ -1,0 +1,63 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_20d14/fast && /usr/bin/make -f CMakeFiles/cmTC_20d14.dir/build.make CMakeFiles/cmTC_20d14.dir/build
+make[1]: 进入目录“/home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_20d14.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_20d14.dir/src.cxx.o -c /home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_20d14
+/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20d14.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_20d14.dir/src.cxx.o  -o cmTC_20d14 
+CMakeFiles/cmTC_20d14.dir/src.cxx.o：在函数‘main’中：
+src.cxx:(.text+0x3e)：对‘pthread_create’未定义的引用
+src.cxx:(.text+0x4a)：对‘pthread_detach’未定义的引用
+src.cxx:(.text+0x5b)：对‘pthread_join’未定义的引用
+src.cxx:(.text+0x6f)：对‘pthread_atfork’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_20d14.dir/build.make:86: recipe for target 'cmTC_20d14' failed
+make[1]: *** [cmTC_20d14] Error 1
+make[1]: 离开目录“/home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CMakeTmp”
+Makefile:121: recipe for target 'cmTC_20d14/fast' failed
+make: *** [cmTC_20d14/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e6b0e/fast && /usr/bin/make -f CMakeFiles/cmTC_e6b0e.dir/build.make CMakeFiles/cmTC_e6b0e.dir/build
+make[1]: 进入目录“/home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_e6b0e.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e6b0e.dir/CheckFunctionExists.cxx.o -c /home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_e6b0e
+/opt/clion-2019.3.2/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6b0e.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e6b0e.dir/CheckFunctionExists.cxx.o  -o cmTC_e6b0e -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e6b0e.dir/build.make:86: recipe for target 'cmTC_e6b0e' failed
+make[1]: *** [cmTC_e6b0e] Error 1
+make[1]: 离开目录“/home/haiyutan/planecalib/cmake-build-debug/CMakeFiles/CMakeTmp”
+Makefile:121: recipe for target 'cmTC_e6b0e/fast' failed
+make: *** [cmTC_e6b0e/fast] Error 2
+
+
+

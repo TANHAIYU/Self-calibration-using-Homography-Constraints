@@ -1,10 +1,3 @@
-/*
- * TextureHelper.h
- *
- *  Created on: Feb 15, 2013
- *      Author: danielh
- */
-
 #ifndef TEXTUREHELPER_H_
 #define TEXTUREHELPER_H_
 

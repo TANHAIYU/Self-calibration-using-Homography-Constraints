@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+d8c598958f79b046f17dcd9c430c6af0 CMakeFiles/freeglut
+bcd789ae7e545b9a17c6d782649a13a4 CMakeFiles/freeglut-complete
+94514cb8702feb7fba8374fc5939c4ca src/freeglut-stamp/freeglut-build
+71b9ed2779e4a22b8f2f06c98bb2a256 src/freeglut-stamp/freeglut-configure
+4111372f99680e61b449d5ed09d39e57 src/freeglut-stamp/freeglut-download
+79efda04488a0928b91a59f238bd97b9 src/freeglut-stamp/freeglut-install
+355e24e027d0872e6134f426ae96853e src/freeglut-stamp/freeglut-mkdir
+4530d58cc24e4b166063bde98b8f680e src/freeglut-stamp/freeglut-patch
+c01abef2717627f79cceb726b9a6961f src/freeglut-stamp/freeglut-update

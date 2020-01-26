@@ -1,0 +1,518 @@
+Scanning dependencies of target Eigen
+[ 12%] Creating directories for 'Eigen'
+[ 25%] No download step for 'Eigen'
+[ 37%] No patch step for 'Eigen'
+[ 50%] No update step for 'Eigen'
+[ 62%] Performing configure step for 'Eigen'
+loading initial cache file /home/haiyutan/planecalib/cmake-build-debug/3rdparty/Eigen/Debug/tmp/Eigen-cache-.cmake
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test standard_math_library_linked_to_automatically
+-- Performing Test standard_math_library_linked_to_automatically - Success
+-- Standard libraries to link to explicitly: none
+-- Performing Test COMPILER_SUPPORT_WERROR
+-- Performing Test COMPILER_SUPPORT_WERROR - Success
+-- Performing Test COMPILER_SUPPORT_pedantic
+-- Performing Test COMPILER_SUPPORT_pedantic - Success
+-- Performing Test COMPILER_SUPPORT_Wall
+-- Performing Test COMPILER_SUPPORT_Wall - Success
+-- Performing Test COMPILER_SUPPORT_Wextra
+-- Performing Test COMPILER_SUPPORT_Wextra - Success
+-- Performing Test COMPILER_SUPPORT_Wundef
+-- Performing Test COMPILER_SUPPORT_Wundef - Success
+-- Performing Test COMPILER_SUPPORT_Wcastalign
+-- Performing Test COMPILER_SUPPORT_Wcastalign - Success
+-- Performing Test COMPILER_SUPPORT_Wcharsubscripts
+-- Performing Test COMPILER_SUPPORT_Wcharsubscripts - Success
+-- Performing Test COMPILER_SUPPORT_Wnonvirtualdtor
+-- Performing Test COMPILER_SUPPORT_Wnonvirtualdtor - Success
+-- Performing Test COMPILER_SUPPORT_Wunusedlocaltypedefs
+-- Performing Test COMPILER_SUPPORT_Wunusedlocaltypedefs - Success
+-- Performing Test COMPILER_SUPPORT_Wpointerarith
+-- Performing Test COMPILER_SUPPORT_Wpointerarith - Success
+-- Performing Test COMPILER_SUPPORT_Wwritestrings
+-- Performing Test COMPILER_SUPPORT_Wwritestrings - Success
+-- Performing Test COMPILER_SUPPORT_Wformatsecurity
+-- Performing Test COMPILER_SUPPORT_Wformatsecurity - Success
+-- Performing Test COMPILER_SUPPORT_Wnopsabi
+-- Performing Test COMPILER_SUPPORT_Wnopsabi - Success
+-- Performing Test COMPILER_SUPPORT_Wnovariadicmacros
+-- Performing Test COMPILER_SUPPORT_Wnovariadicmacros - Success
+-- Performing Test COMPILER_SUPPORT_Wnolonglong
+-- Performing Test COMPILER_SUPPORT_Wnolonglong - Success
+-- Performing Test COMPILER_SUPPORT_fnochecknew
+-- Performing Test COMPILER_SUPPORT_fnochecknew - Success
+-- Performing Test COMPILER_SUPPORT_fnocommon
+-- Performing Test COMPILER_SUPPORT_fnocommon - Success
+-- Performing Test COMPILER_SUPPORT_fstrictaliasing
+-- Performing Test COMPILER_SUPPORT_fstrictaliasing - Success
+-- Performing Test COMPILER_SUPPORT_wd981
+-- Performing Test COMPILER_SUPPORT_wd981 - Failed
+-- Performing Test COMPILER_SUPPORT_wd2304
+-- Performing Test COMPILER_SUPPORT_wd2304 - Failed
+-- Performing Test COMPILER_SUPPORT_STRICTANSI
+-- Performing Test COMPILER_SUPPORT_STRICTANSI - Failed
+-- Performing Test COMPILER_SUPPORT_Qunusedarguments
+-- Performing Test COMPILER_SUPPORT_Qunusedarguments - Failed
+-- Performing Test COMPILER_SUPPORT_ansi
+-- Performing Test COMPILER_SUPPORT_ansi - Success
+-- Performing Test COMPILER_SUPPORT_OPENMP
+-- Performing Test COMPILER_SUPPORT_OPENMP - Success
+-- searching for 'pkgconfig' directory in PKG_CONFIG_LIBDIR (  ), /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/share, and /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/lib
+-- pkgconfig not found; installing in /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/share
+-- Looking for Q_WS_X11
+-- Looking for Q_WS_X11 - found
+-- Looking for Q_WS_WIN
+-- Looking for Q_WS_WIN - not found
+-- Looking for Q_WS_QWS
+-- Looking for Q_WS_QWS - not found
+-- Looking for Q_WS_MAC
+-- Looking for Q_WS_MAC - not found
+-- Found Qt4: /usr/bin/qmake-qt4 (found version "4.8.7") 
+-- /home/haiyutan/planecalib/cmake-build-debug/3rdparty/Eigen/Debug/src/Eigen-build/test
+-- Found CHOLMOD: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse  
+-- Found UMFPACK: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse  
+-- Found SUPERLU: /usr/include/superlu  
+-- Could NOT find PASTIX (missing: PASTIX_INCLUDES PASTIX_LIBRARIES) 
+-- Could NOT find SCOTCH (missing: SCOTCH_INCLUDES SCOTCH_LIBRARIES) 
+-- Could NOT find METIS (missing: METIS_INCLUDES METIS_LIBRARIES) 
+-- Found SPQR: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/suitesparse  
+-- The Fortran compiler identification is unknown
+-- Could NOT find GOOGLEHASH (missing: GOOGLEHASH_INCLUDES GOOGLEHASH_COMPILE) 
+-- Could NOT find ADOLC (missing: ADOLC_INCLUDES ADOLC_LIBRARIES) 
+-- Could NOT find MPFR (missing: MPFR_INCLUDES MPFR_LIBRARIES MPFR_VERSION_OK) (Required is at least version "2.3.0")
+-- Could NOT find GMP (missing: GMP_INCLUDES GMP_LIBRARIES) 
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- Could NOT find FFTW (missing: FFTW_INCLUDES FFTW_LIBRARIES) 
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found GLUT: /usr/lib/x86_64-linux-gnu/libglut.so  
+-- Found Glew: /usr/lib/x86_64-linux-gnu/libGLEW.so
+-- Found Qt4: /usr/bin/qmake-qt4 (found version "4.8.7") 
+-- Could NOT find PASTIX (missing: PASTIX_INCLUDES PASTIX_LIBRARIES) 
+-- Could NOT find SCOTCH (missing: SCOTCH_INCLUDES SCOTCH_LIBRARIES) 
+-- Could NOT find METIS (missing: METIS_INCLUDES METIS_LIBRARIES) 
+-- ************************************************************
+-- ***    Eigen's unit tests configuration summary          ***
+-- ************************************************************
+-- 
+-- Build type:        Debug
+-- Build site:        haiyutan-omen
+-- Build string:      linux-5.3.0-26-generic-_-7.4.0-sse2-64bit
+-- Enabled backends:  Cholmod,  UmfPack,  SuperLU,  SPQR,  Qt4 support,  OpenGL, 
+-- Disabled backends: PaStiX,  METIS,  GoogleHash,  Adolc,  MPFR C++,  fftw, 
+-- Default order:     Column-major
+-- Maximal matrix/vector size: 320
+-- SSE2:              Using architecture defaults
+-- SSE3:              Using architecture defaults
+-- SSSE3:             Using architecture defaults
+-- SSE4.1:            Using architecture defaults
+-- SSE4.2:            Using architecture defaults
+-- Altivec:           Using architecture defaults
+-- ARM NEON:          Using architecture defaults
+-- 
+CXX:               /usr/bin/c++
+ CXX_VERSION:       c++ (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
+ CXX_FLAGS:           -fexceptions -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi  -g2
+ Sparse lib flags:   ;/usr/lib/x86_64-linux-gnu/libcholmod.so;/usr/lib/x86_64-linux-gnu/libamd.so;/usr/lib/x86_64-linux-gnu/libcolamd.so;/usr/lib/x86_64-linux-gnu/libcamd.so;/usr/lib/x86_64-linux-gnu/libccolamd.so;eigen_blas;eigen_lapack;/usr/lib/x86_64-linux-gnu/libumfpack.so;/usr/lib/x86_64-linux-gnu/libcolamd.so;/usr/lib/x86_64-linux-gnu/libamd.so;eigen_blas;/usr/lib/x86_64-linux-gnu/libsuperlu.so;eigen_blas;/usr/lib/x86_64-linux-gnu/libspqr.so;/usr/lib/x86_64-linux-gnu/libcholmod.so;/usr/lib/x86_64-linux-gnu/libamd.so;/usr/lib/x86_64-linux-gnu/libcolamd.so;/usr/lib/x86_64-linux-gnu/libcamd.so;/usr/lib/x86_64-linux-gnu/libccolamd.so;eigen_lapack;eigen_blas
+
+-- ************************************************************
+-- 
+-- Configured Eigen 3.2.2
+-- 
+-- Some things you can do now:
+-- --------------+--------------------------------------------------------------
+-- Command       |   Description
+-- --------------+--------------------------------------------------------------
+-- make install  | Install to /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr. To change that:
+--               |     cmake . -DCMAKE_INSTALL_PREFIX=yourpath
+--               |   Eigen headers will then be installed to:
+--               |     /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3
+--               |   To install Eigen headers to a separate location, do:
+--               |     cmake . -DEIGEN_INCLUDE_INSTALL_DIR=yourpath
+-- make doc      | Generate the API documentation, requires Doxygen & LaTeX
+-- make check    | Build and run the unit-tests. Read this page:
+--               |   http://eigen.tuxfamily.org/index.php?title=Tests
+-- make blas     | Build BLAS library (not the same thing as Eigen)
+-- --------------+--------------------------------------------------------------
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/Eigen/Debug/src/Eigen-build
+[ 75%] Performing build step for 'Eigen'
+[ 87%] Performing install step for 'Eigen'
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/signature_of_eigen3_matrix_library
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/share/pkgconfig/eigen3.pc
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Array
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Cholesky
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/CholmodSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Core
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Dense
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Eigen
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Eigen2Support
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Eigenvalues
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Geometry
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Householder
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/IterativeLinearSolvers
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Jacobi
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/LU
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/LeastSquares
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/MetisSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/OrderingMethods
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/PaStiXSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/PardisoSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/QR
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/QtAlignedMalloc
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/SPQRSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/SVD
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/Sparse
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/SparseCholesky
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/SparseCore
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/SparseLU
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/SparseQR
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/StdDeque
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/StdList
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/StdVector
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/SuperLUSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/UmfPackSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Cholesky/LLT.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Cholesky/LLT_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/CholmodSupport/CholmodSupport.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Array.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/ArrayBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Assign.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/BandMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Block.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/CoreIterators.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/DenseBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/DenseStorage.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Diagonal.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Dot.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/EigenBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Flagged.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Functors.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Fuzzy.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/IO.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Map.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/MapBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/MathFunctions.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Matrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/MatrixBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/NestByValue.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/NoAlias.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/NumTraits.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/ProductBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Random.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Redux.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Ref.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Replicate.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/ReturnByValue.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Reverse.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Select.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/StableNorm.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Stride.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Swap.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Transpose.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Transpositions.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/VectorBlock.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/Visitor.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/Constants.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/Macros.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/Memory.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/Meta.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/NonMPL2.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/LeastSquares.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Scaling.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Transform.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Translation.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Householder/Householder.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/LU/Determinant.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/LU/FullPivLU.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/LU/Inverse.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/MetisSupport/MetisSupport.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/OrderingMethods/Amd.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/OrderingMethods/Ordering.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/PaStiXSupport/PaStiXSupport.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/PardisoSupport/PardisoSupport.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SPQRSupport/SuiteSparseQRSupport.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/AmbiVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/CompressedStorage.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseBlock.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseDot.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseRedux.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseTranspose.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseTriangularView.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseUtil.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/SparseView.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SparseQR/SparseQR.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/StlSupport/StdDeque.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/StlSupport/StdList.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/StlSupport/StdVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/StlSupport/details.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/SuperLUSupport/SuperLUSupport.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/UmfPackSupport/UmfPackSupport.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/misc/Image.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/misc/Kernel.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/misc/Solve.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/misc/SparseSolve.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/misc/blas.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/AdolcForward
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/BVH
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/IterativeSolvers
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/MatrixFunctions
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/MoreVectorization
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/AutoDiff
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/AlignedVector3
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/Polynomials
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/FFT
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/NonLinearOptimization
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/SparseExtra
+-- Up-to-date: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/IterativeSolvers
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/NumericalDiff
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/Skyline
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/MPRealSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/OpenGLSupport
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/KroneckerProduct
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/Splines
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/LevenbergMarquardt
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffJacobian.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffScalar.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/AutoDiff/AutoDiffVector.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/BVH/BVAlgorithms.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/BVH/KdBVH.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/ConstrainedConjGrad.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/DGMRES.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/GMRES.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/IncompleteCholesky.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/IncompleteLU.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/IterationController.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/MINRES.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/IterativeSolvers/Scaling.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixExponential.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixFunction.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixFunctionAtomic.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixLogarithm.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixPower.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MatrixFunctions/MatrixSquareRoot.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MatrixFunctions/StemFunction.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/MoreVectorization/MathFunctions.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/HybridNonLinearSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/chkder.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/covar.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/dogleg.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/fdjac1.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/lmpar.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/qrsolv.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1mpyq.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/r1updt.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NonLinearOptimization/rwupdt.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Polynomials/Companion.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialSolver.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Polynomials/PolynomialUtils.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Skyline/SkylineInplaceLU.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Skyline/SkylineMatrixBase.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Skyline/SkylineProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Skyline/SkylineStorage.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Skyline/SkylineUtil.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/SparseExtra/BlockOfDynamicSparseMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/SparseExtra/DynamicSparseMatrix.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/SparseExtra/MarketIO.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/SparseExtra/MatrixMarketIterator.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/SparseExtra/RandomSetter.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Splines/Spline.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Splines/SplineFitting.h
+-- Installing: /home/haiyutan/planecalib/cmake-build-debug/3rdparty/usr/include/eigen3/unsupported/Eigen/src/Splines/SplineFwd.h
+[100%] Completed 'Eigen'
+[100%] Built target Eigen

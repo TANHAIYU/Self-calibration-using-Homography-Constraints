@@ -64,11 +64,11 @@ void pressKey(unsigned char key, int x, int y)
   gApp->keyDown(false, key);
 }
 
-//void releaseKey(unsigned char key, int x, int y) //（HAIYUTAN）
-//{
-//	planecalib::UserInterfaceInfo::Instance().setKeyState(key, false);
-//	gApp->keyUp(false, key);
-//}
+void releaseKey(unsigned char key, int x, int y)
+{
+  planecalib::UserInterfaceInfo::Instance().setKeyState(key, false);
+  gApp->keyUp(false, key);
+}
 
 void pressSpecial(int key, int x, int y)
 {
@@ -82,23 +82,23 @@ void releaseSpecial(int key, int x, int y)
 	gApp->keyUp(true, key);
 }
 
-//void mouseEvent(int id, int state, int x, int y) //(HAIYUTAN)
-//{
-//	if(state==GLUT_DOWN)
-//		gApp->touchDown(id, x, y);
-//	else if(state == GLUT_UP)
-//		gApp->touchUp(id, x, y);
-//}
+void mouseEvent(int id, int state, int x, int y)
+{
+  if(state==GLUT_DOWN)
+    gApp->touchDown(id, x, y);
+  else if(state == GLUT_UP)
+    gApp->touchUp(id, x, y);
+}
 
-//void mouseMoveEvent(int x, int y) //(HAIYUTAN)
-//{
-//	gApp->touchMove(x, y);
-//}
+void mouseMoveEvent(int x, int y)
+{
+  gApp->touchMove(x, y);
+}
 
 
 int main(int argc, char**argv)
 {
-  //google::ParseCommandLineFlags(&argc, &argv, true);
+  google::ParseCommandLineFlags(&argc, &argv, true);
 
 	//cv::Size initialSize(1980,1040);
   Eigen::Vector2i initialSize(planecalib::FLAGS_WindowWidth, planecalib::FLAGS_WindowHeight);
@@ -123,15 +123,15 @@ int main(int argc, char**argv)
   glutReshapeFunc(changeSize);   //（HAIYUTAN）
   glutIdleFunc(renderScene);
 
-  //glutIgnoreKeyRepeat(0);       //（HAIYUTAN）
+  glutIgnoreKeyRepeat(0);       //（HAIYUTAN）
   glutKeyboardFunc(pressKey);
-  //glutKeyboardUpFunc(releaseKey);  //（HAIYUTAN）
-  //glutSpecialFunc(pressSpecial);   //（HAIYUTAN）
-  //glutSpecialUpFunc(releaseSpecial);  //（HAIYUTAN）
-  //glutMouseFunc(mouseEvent);        //（HAIYUTAN）
-  //glutMotionFunc(mouseMoveEvent);   //（HAIYUTAN）
+  glutKeyboardUpFunc(releaseKey);  //（HAIYUTAN）
+  glutSpecialFunc(pressSpecial);   //（HAIYUTAN）
+  glutSpecialUpFunc(releaseSpecial);  //（HAIYUTAN）
+  glutMouseFunc(mouseEvent);        //（HAIYUTAN）
+  glutMotionFunc(mouseMoveEvent);   //（HAIYUTAN）
 	
-  //glEnable(GL_MULTISAMPLE);    //（HAIYUTAN）
+  glEnable(GL_MULTISAMPLE);    //（HAIYUTAN）
 
 	gApp = new planecalib::PlaneCalibApp();
 
@@ -142,7 +142,7 @@ int main(int argc, char**argv)
 	}
 
 	// enter GLUT event processing cycle
-  glutMainLoop();             //（HAIYUTAN）
+  glutMainLoop();
 
 	return 0;
 }

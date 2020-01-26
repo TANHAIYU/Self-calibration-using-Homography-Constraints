@@ -1,10 +1,3 @@
-/*
- * GLImageTiler.cpp
- *
- *  Created on: Feb 15, 2013
- *      Author: danielh
- */
-
 #include "ViewportTiler.h"
 #include <cassert>
 #include "GL/glew.h"

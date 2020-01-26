@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libcolamdd.a  CMakeFiles/colamd.dir/SourceWrappers/colamd.c.o CMakeFiles/colamd.dir/SourceWrappers/colamd_global.c.o CMakeFiles/colamd.dir/SourceWrappers/colamd_l.o.c.o
+/usr/bin/ranlib ../../lib/libcolamdd.a

@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+9442e38124f962aac7b1fe912c0e4a9e CMakeFiles/SuiteSparse
+ae130b6320036153179060ae2876e5bf CMakeFiles/SuiteSparse-complete
+b05661f6797ee2a3f6f6e12c7d8ff5c2 src/SuiteSparse-stamp/SuiteSparse-build
+0ffff0f9cd05514341a6a4563331fe60 src/SuiteSparse-stamp/SuiteSparse-configure
+491beba8114147c6c3a117fb215715fc src/SuiteSparse-stamp/SuiteSparse-download
+974ee200cd04b419b23b001c058d29e6 src/SuiteSparse-stamp/SuiteSparse-install
+4b6ce1c532197a5d0bcd23bae71884b7 src/SuiteSparse-stamp/SuiteSparse-mkdir
+81f63d602f87f64d50dcc8c4e1d5e88d src/SuiteSparse-stamp/SuiteSparse-patch
+f0cba4e5372e4aca97204c5b78ade908 src/SuiteSparse-stamp/SuiteSparse-update

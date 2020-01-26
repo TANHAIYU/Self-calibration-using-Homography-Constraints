@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/CMakeFiles/glew"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/CMakeFiles/glew.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/CMakeFiles/glew-complete.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/src/glew-stamp/glew-install.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/src/glew-stamp/glew-mkdir.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/src/glew-stamp/glew-download.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/src/glew-stamp/glew-update.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/src/glew-stamp/glew-patch.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/src/glew-stamp/glew-configure.rule"
+		},
+		{
+			"file" : "/home/haiyutan/planecalib/cmake-build-debug/3rdparty/glew/Debug/src/glew-stamp/glew-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glew"
+		],
+		"name" : "glew"
+	}
+}
