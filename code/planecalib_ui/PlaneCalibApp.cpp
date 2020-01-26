@@ -1,10 +1,3 @@
-/*
- * SlamDriver.cpp
- *
- *  Created on: 28.2.2014
- *      Author: dan
- */
-
 #include "PlaneCalibApp.h"
 #include <iostream>
 #include <fstream>
