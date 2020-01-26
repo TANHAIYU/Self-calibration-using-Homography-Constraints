@@ -1,10 +1,3 @@
-/*
- * VideoImageDataSource.cpp
- *
- *  Created on: Jul 10, 2013
- *      Author: danielh
- */
-
 #include "OpenCVDataSource.h"
 #include <opencv2/imgproc.hpp>
 #include "planecalib/Profiler.h"
