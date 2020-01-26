@@ -233,7 +233,7 @@ void PnPRefiner::refinePose(const std::vector<Eigen::Vector3f> &refPoints,
   options.num_threads = 1;
   //Multi-threading here adds too much overhead
   //TODO：num_linear_solver_threads？？
-  options.num_linear_solver_threads = 1;//我改的
+  //options.num_linear_solver_threads = 1;//我改的
 
 	options.logging_type = ceres::SILENT;
 	options.minimizer_progress_to_stdout = false;
@@ -279,4 +279,4 @@ void PnPRefiner::refinePose(const std::vector<Eigen::Vector3f> &refPoints,
 	//MYAPP_LOG << "PnPRefine: final inlier count=" << inlierCount << "/" << matchCount << "\n";
 }
 
-} /* namespace dtslam */
+}
